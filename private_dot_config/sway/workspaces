@@ -1,0 +1,32 @@
+# This file is read by ./set-workspaces.sh and determines the list of workspaces and default applications.
+# Each line looks as follows:
+##$number - $name; $command
+# $number is the number of the workspace. Used for the ordering of workspaces.
+# $name is the name of the workspace.
+# and (if used) $command is the default command for that workspace. This is optional.
+# If $command is omitted, a semicolon must still be present.
+# Blank lines and lines starting with `#` are ignored.
+
+
+# Entertainment:
+1 - Gaming;        steam
+2 - Browsing;      firefox
+3 - Communication; flatpak run com.discordapp.Discord
+4 - Music;         flatpak run com.spotify.Client
+
+# Development:
+5 - Coding;        code
+6 - Game Dev;      godot
+7 - 3D Art;        blender
+8 - NULL;          
+
+# System:
+9 - Terminal;      foot
+10 - Files;        nemo
+11 - Images;       foot fish -c swayimg $(/bin/fd /home/mildly-intelligent/Pictures -t file)
+12 - NULL;         
+
+# School:
+13 - Schoology;    firefox --new-window https://bethtfiloh.schoology.com/home#/?_k=j256ik
+14 - Office;       flatpak run org.libreoffice.LibreOffice
+15 - NULL;         

@@ -1,0 +1,46 @@
+
+set $ws1 "1 - Gaming"
+set $da1 "steam"
+
+set $ws2 "2 - Browsing"
+set $da2 "firefox"
+
+set $ws3 "3 - Communication"
+set $da3 "flatpak run com.discordapp.Discord"
+
+set $ws4 "4 - Music"
+set $da4 "flatpak run com.spotify.Client"
+
+set $ws5 "5 - Coding"
+set $da5 "code"
+
+set $ws6 "6 - Game Dev"
+set $da6 "godot"
+
+set $ws7 "7 - 3D Art"
+set $da7 "blender"
+
+set $ws8 "8 - NULL"
+set $da8 ""
+
+set $ws9 "9 - Terminal"
+set $da9 "foot"
+
+set $ws10 "10 - Files"
+set $da10 "nemo"
+
+set $ws11 "11 - Images"
+set $da11 "foot fish -c swayimg $(/bin/fd /home/mildly-intelligent/Pictures -t file)"
+
+set $ws12 "12 - NULL"
+set $da12 ""
+
+set $ws13 "13 - Schoology"
+set $da13 "firefox --new-window https://bethtfiloh.schoology.com/home#/?_k=j256ik"
+
+set $ws14 "14 - Office"
+set $da14 "flatpak run org.libreoffice.LibreOffice"
+
+set $ws15 "15 - NULL"
+set $da15 ""
+

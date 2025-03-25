@@ -1,0 +1,156 @@
+[general]
+    mode=viewer
+    size=parent
+
+[viewer]
+    scale=fit
+    fixed=no
+    history=100
+    antialiasing=none
+[gallery]
+    shadow=#00000080
+[list]
+    recursive=yes
+[font]
+    name=notosans nerd font
+    size=16
+    shadow=#00000000
+[info]
+    info_timeout=0
+[info.viewer]
+    top_left=name,path,+filesize,+format,imagesize
+    top_right=index
+    bottom_left=frame,scale
+    bottom_right=exif
+[info.gallery]
+    top_left=none
+    top_right=index
+    bottom_left=name,path,+filesize,+format,imagesize
+    bottom_right=dir
+[keys.viewer]
+# Remove builtins:
+    R=none
+    L=none
+    E=none
+    0x01000000=none
+    Alt+ScrollDown=none
+    Alt+ScrollUp=none
+    q=none
+    Shift+Delete=none
+    Shift+a=none
+    Shift+m=none
+    m=none
+    Alt+z=none
+    BackSpace=none
+    0=none
+    Shift+z=none
+    z=none
+    w=none
+    Shift+w=none
+    equal=none
+    Shift+s=none
+    c=none
+    o=none
+    Shift+o=none
+    Shift+r=none
+    d=none
+    Shift+d=none
+    F1=none
+    Up=none
+    Down=none
+
+
+#Set keybinds:
+    h=help
+    
+    home=first_file
+    end=last_file
+    
+    Prior=prev_dir
+    Next=next_dir
+    
+    Left=prev_file
+    Right=next_file
+    Shift+ScrollUp=prev_file
+    Shift+ScrollDown=next_file
+    
+    Shift+Left=prev_frame
+    Shift+Right=next_frame
+
+    Space=animation
+    s=slideshow
+
+    f=fullscreen
+
+    Return=mode gallery
+
+    ScrollLeft=step_left 5
+    ScrollRight=step_right 5
+    ScrollUp=step_up 5
+    ScrollDown=step_down 5
+
+    Ctrl+Left=step_left 5
+    Ctrl+Right=step_right 5
+    Ctrl+Up=step_up 5
+    Ctrl+Down=step_down 5
+
+    Ctrl+ScrollUp=zoom +5
+    Ctrl+ScrollDown=zoom -5
+    +=zoom +5
+    -=zoom -5
+
+    LeftBracket=rotate_left
+    RightBracket=rotate_right
+    p=flip_vertical
+    semicolon=flip_horizontal
+
+    r=reload
+    a=antialiasing next
+    
+    i=info off
+    Ctrl+i=info viewer
+
+    Escape=exit
+
+[keys.gallery]
+# Remove builtins
+    E=none
+    ScrollDown=none
+    ScrollUp=none
+    ScrollLeft=none
+    ScrollRight=none
+    q=none
+    Shift+Delete=none
+    Shift+a=none
+    c=none
+    F1=none
+
+
+# Set keybinds:
+    h=help
+
+    home=first_file
+    end=last_file
+
+    Left=step_left
+    Right=step_right
+    Up=step_up
+    Down=step_down
+
+    Prior=page_up
+    Next=page_down
+    ScrollUp=page_up
+    ScrollDown=page_down
+
+    f=fullscreen
+
+    return=mode
+
+    r=reload
+    
+    a=antialiasing
+    
+    i=info off
+    Ctrl+i=info viewer
+
+    Escape=exit

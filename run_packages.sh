@@ -50,8 +50,8 @@ sudo pacman -S --noconfirm appimagelauncher \
  nemo \
  wine \
  wev \
- w3m \ 
- vi \
+ w3m \
+ vlc \
  unzip \
  ttf-hack-nerd ttf-noto-nerd terminus-font \
  steam \

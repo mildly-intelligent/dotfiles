@@ -35,6 +35,7 @@ yay -S --noconfirm swayfx-git
 # non-important:
 sudo pacman -S --noconfirm appimagelauncher \
  blender \
+ btop \	 
  cmatrix \
  cowsay \
  fd \

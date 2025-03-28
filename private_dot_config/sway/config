@@ -78,7 +78,6 @@ bar {
 # Set the modifier keys:
 set $alt Mod1
 set $mod Mod4
-set $Scrlk Scroll_Lock
 
 # Set up a shortcut to reload this config file:
 bindsym $mod+Shift+c reload
@@ -127,46 +126,8 @@ bindsym $mod+r mode "resize"
 exec_always exec $CONFIG_DIR/sway/set-workspaces.sh
 include ./workspaces.sway
 
-# Move between workspaces
-bindsym $mod+F1     workspace $ws1;  set $da $da1
-bindsym $mod+F2     workspace $ws2;  set $da $da2
-bindsym $mod+F3     workspace $ws3;  set $da $da3
-bindsym $mod+F4     workspace $ws4;  set $da $da4
-
-bindsym $mod+F5     workspace $ws5;  set $da $da5
-bindsym $mod+F6     workspace $ws6;  set $da $da6
-bindsym $mod+F7     workspace $ws7;  set $da $da7
-bindsym $mod+F8     workspace $ws8;  set $da $da8
-
-bindsym $mod+F9     workspace $ws9;  set $da $da9
-bindsym $mod+F10    workspace $ws10; set $da $da10
-bindsym $mod+F11    workspace $ws11; set $da $da11
-bindsym $mod+F12    workspace $ws12; set $da $da12
-
-bindsym $mod+Print  workspace $ws13; set $da $da13
-bindsym $mod+$Scrlk workspace $ws14; set $da $da14
-bindsym $mod+Pause  workspace $ws15; set $da $da15
-
-
-# Move focused container to workspace
-bindsym $mod+Shift+F1     move container to workspace $ws1
-bindsym $mod+Shift+F2     move container to workspace $ws2
-bindsym $mod+Shift+F3     move container to workspace $ws3
-bindsym $mod+Shift+F4     move container to workspace $ws4
-
-bindsym $mod+Shift+F5     move container to workspace $ws5
-bindsym $mod+Shift+F6     move container to workspace $ws6
-bindsym $mod+Shift+F7     move container to workspace $ws7
-bindsym $mod+Shift+F8     move container to workspace $ws8
-
-bindsym $mod+Shift+F9     move container to workspace $ws9
-bindsym $mod+Shift+F10    move container to workspace $ws10
-bindsym $mod+Shift+F11    move container to workspace $ws11
-bindsym $mod+Shift+F12    move container to workspace $ws12
-
-bindsym $mod+Shift+Print  move container to workspace $ws13
-bindsym $mod+Shift+$Scrlk move container to workspace $ws14
-bindsym $mod+Shift+Pause  move container to workspace $ws15
+# Start on btop:
+exec $CONFIG_DIR/sway/btop-startup.sh
 
 
 #=============================#
@@ -224,7 +185,7 @@ bindsym $mod+$alt+t exec foot
 bindsym $mod+space exec wofi --show drun  -i | xargs swaymsg exec --
 
 # Default application for the current workspace (see ./workspaces):
-bindsym $mod+$alt+space exec $da
+bindsym $mod+$alt+space exec $dc
 
 # Take screenshot:
 bindsym ctrl+$alt+Tab exec $CONFIG_DIR/sway/screenshot.sh

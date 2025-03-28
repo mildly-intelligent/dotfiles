@@ -1,46 +1,121 @@
 
+set $bu1 F1
 set $ws1 "1 - Gaming"
-set $da1 "steam"
+set $dc1 "steam"
 
+bindsym $mod+$bu1 workspace $ws1;    set $dc $dc1
+bindsym $mod+Shift+$bu1 move container to workspace $ws1
+
+
+set $bu2 F2
 set $ws2 "2 - Browsing"
-set $da2 "firefox"
+set $dc2 "firefox"
 
+bindsym $mod+$bu2 workspace $ws2;    set $dc $dc2
+bindsym $mod+Shift+$bu2 move container to workspace $ws2
+
+
+set $bu3 F3
 set $ws3 "3 - Communication"
-set $da3 "flatpak run com.discordapp.Discord"
+set $dc3 "flatpak run com.discordapp.Discord"
 
+bindsym $mod+$bu3 workspace $ws3;    set $dc $dc3
+bindsym $mod+Shift+$bu3 move container to workspace $ws3
+
+
+set $bu4 F4
 set $ws4 "4 - Music"
-set $da4 "flatpak run com.spotify.Client"
+set $dc4 "spotify"
 
+bindsym $mod+$bu4 workspace $ws4;    set $dc $dc4
+bindsym $mod+Shift+$bu4 move container to workspace $ws4
+
+
+set $bu5 F5
 set $ws5 "5 - Coding"
-set $da5 "code"
+set $dc5 "code"
 
+bindsym $mod+$bu5 workspace $ws5;    set $dc $dc5
+bindsym $mod+Shift+$bu5 move container to workspace $ws5
+
+
+set $bu6 F6
 set $ws6 "6 - Game Dev"
-set $da6 "godot"
+set $dc6 "godot"
 
+bindsym $mod+$bu6 workspace $ws6;    set $dc $dc6
+bindsym $mod+Shift+$bu6 move container to workspace $ws6
+
+
+set $bu7 F7
 set $ws7 "7 - 3D Art"
-set $da7 "blender"
+set $dc7 "blender"
 
+bindsym $mod+$bu7 workspace $ws7;    set $dc $dc7
+bindsym $mod+Shift+$bu7 move container to workspace $ws7
+
+
+set $bu8 F8
 set $ws8 "8 - NULL"
-set $da8 ""
+set $dc8 ""
 
+bindsym $mod+$bu8 workspace $ws8;    set $dc $dc8
+bindsym $mod+Shift+$bu8 move container to workspace $ws8
+
+
+set $bu9 F9
 set $ws9 "9 - Terminal"
-set $da9 "foot"
+set $dc9 "foot"
 
+bindsym $mod+$bu9 workspace $ws9;    set $dc $dc9
+bindsym $mod+Shift+$bu9 move container to workspace $ws9
+
+
+set $bu10 F10
 set $ws10 "10 - Files"
-set $da10 "nemo"
+set $dc10 "nemo"
 
-set $ws11 "11 - Images"
-set $da11 "foot fish -c swayimg $(/bin/fd /home/mildly-intelligent/Pictures -t file)"
+bindsym $mod+$bu10 workspace $ws10;    set $dc $dc10
+bindsym $mod+Shift+$bu10 move container to workspace $ws10
 
+
+set $bu11 F11
+set $ws11 "11 - System monitor"
+set $dc11 "foot btop"
+
+bindsym $mod+$bu11 workspace $ws11;    set $dc $dc11
+bindsym $mod+Shift+$bu11 move container to workspace $ws11
+
+
+set $bu12 F12
 set $ws12 "12 - NULL"
-set $da12 ""
+set $dc12 ""
 
+bindsym $mod+$bu12 workspace $ws12;    set $dc $dc12
+bindsym $mod+Shift+$bu12 move container to workspace $ws12
+
+
+set $bu13 Print
 set $ws13 "13 - Schoology"
-set $da13 "firefox --new-window https://bethtfiloh.schoology.com/home#/?_k=j256ik"
+set $dc13 "firefox --new-window https://bethtfiloh.schoology.com/home#/?_k=j256ik"
 
+bindsym $mod+$bu13 workspace $ws13;    set $dc $dc13
+bindsym $mod+Shift+$bu13 move container to workspace $ws13
+
+
+set $bu14 Scroll_Lock
 set $ws14 "14 - Office"
-set $da14 "flatpak run org.libreoffice.LibreOffice"
+set $dc14 "flatpak run org.libreoffice.LibreOffice"
 
+bindsym $mod+$bu14 workspace $ws14;    set $dc $dc14
+bindsym $mod+Shift+$bu14 move container to workspace $ws14
+
+
+set $bu15 Pause
 set $ws15 "15 - NULL"
-set $da15 ""
+set $dc15 ""
+
+bindsym $mod+$bu15 workspace $ws15;    set $dc $dc15
+bindsym $mod+Shift+$bu15 move container to workspace $ws15
+
 

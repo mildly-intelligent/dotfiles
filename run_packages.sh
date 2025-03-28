@@ -57,4 +57,5 @@ sudo pacman -S --noconfirm appimagelauncher \
  ttf-hack-nerd ttf-noto-nerd terminus-font \
  steam \
  rocm-opencl-runtime
-yay -S --noconfirm visual-studio-code-bin
+yay -S --noconfirm visual-studio-code-bin \
+ spotify spicetify-cli

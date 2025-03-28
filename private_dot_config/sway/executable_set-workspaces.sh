@@ -1,6 +1,8 @@
 #!/bin/bash
 
-echo "" > $HOME/.config/sway/workspaces.sway
+export_file=$HOME/.config/sway/workspaces.sway
+
+echo "" > $export_file
 
 old_IFS="$IFS"
 IFS=';'
@@ -12,13 +14,25 @@ while read line; do
     fi
 
     line=($line)
-    name=$(echo "${line[0]}" | xargs)
-    command=$(echo "${line[1]}" | xargs)
+    button=$(echo "${line[0]}" | xargs)
+    name=$(echo "${line[1]}" | xargs)
+    command=$(echo "${line[2]}" | xargs)
     
-    echo "set \$ws$i \"$name\"" >> $HOME/.config/sway/workspaces.sway
-    echo "set \$da$i \"$command\"" >> $HOME/.config/sway/workspaces.sway
-    echo "" >> $HOME/.config/sway/workspaces.sway
+    # bu - button:
+    echo "set \$bu$i $button" >> $export_file
+    # ws - workspace name:
+    echo "set \$ws$i \"$name\"" >> $export_file
+    # dc - default command:
+    echo "set \$dc$i \"$command\"" >> $export_file
+
+    echo "" >> $export_file
+
+    # Bind buttons:
+    echo "bindsym \$mod+\$bu$i workspace \$ws$i;    set \$dc \$dc$i" >> $export_file
+    echo "bindsym \$mod+Shift+\$bu$i move container to workspace \$ws$i" >> $export_file
     
+    echo "" >> $export_file; echo "" >> $export_file
+
     i=$(( $i + 1 ))
 done < $HOME/.config/sway/workspaces
 

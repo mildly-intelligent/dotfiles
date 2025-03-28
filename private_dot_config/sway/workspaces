@@ -1,32 +1,32 @@
 # This file is read by ./set-workspaces.sh and determines the list of workspaces and default applications.
-# Each line looks as follows:
-##$number - $name; $command
-# $number is the number of the workspace. Used for the ordering of workspaces.
-# $name is the name of the workspace.
-# and (if used) $command is the default command for that workspace. This is optional.
-# If $command is omitted, a semicolon must still be present.
-# Blank lines and lines starting with `#` are ignored.
+# Lines starting with `#` are comments.
+# Comments and blank lines will both be ignored.
+# Each line has three parts separated by semicolons:
+## BUTTON, this is the button that will be bound tho that workspace.
+## NAME, this is the name of the workspace in waybar.
+## COMMAND, (optional, if omitted, the semicolon must still be there) this is the default command to run on $mod+$alt+Space.
 
 
 # Entertainment:
-1 - Gaming;        steam
-2 - Browsing;      firefox
-3 - Communication; flatpak run com.discordapp.Discord
-4 - Music;         flatpak run com.spotify.Client
+F1;     1 - Gaming;         steam
+F2;     2 - Browsing;       firefox
+F3;     3 - Communication;  flatpak run com.discordapp.Discord
+F4;     4 - Music;          spotify
 
 # Development:
-5 - Coding;        code
-6 - Game Dev;      godot
-7 - 3D Art;        blender
-8 - NULL;          
+F5;     5 - Coding;         code
+F6;     6 - Game Dev;       godot
+F7;     7 - 3D Art;         blender
+F8;     8 - NULL;           
 
 # System:
-9 - Terminal;      foot
-10 - Files;        nemo
-11 - Images;       foot fish -c swayimg $(/bin/fd /home/mildly-intelligent/Pictures -t file)
-12 - NULL;         
+F9;     9 - Terminal;       foot
+F10;   10 - Files;          nemo
+F11;   11 - System monitor; foot btop
+F12;   12 - NULL;           
 
 # School:
-13 - Schoology;    firefox --new-window https://bethtfiloh.schoology.com/home#/?_k=j256ik
-14 - Office;       flatpak run org.libreoffice.LibreOffice
-15 - NULL;         
+Print; 13 - Schoology;      firefox --new-window https://bethtfiloh.schoology.com/home#/?_k=j256ik
+# Why is this button name so fucking long.
+Scroll_Lock; 14 - Office;   flatpak run org.libreoffice.LibreOffice
+Pause; 15 - NULL;           

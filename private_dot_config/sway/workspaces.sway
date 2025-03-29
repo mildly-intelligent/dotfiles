@@ -17,7 +17,7 @@ bindsym $mod+Shift+$bu2 move container to workspace $ws2
 
 set $bu3 F3
 set $ws3 "3 - Communication"
-set $dc3 "flatpak run com.discordapp.Discord"
+set $dc3 "discord"
 
 bindsym $mod+$bu3 workspace $ws3;    set $dc $dc3
 bindsym $mod+Shift+$bu3 move container to workspace $ws3
@@ -96,8 +96,8 @@ bindsym $mod+Shift+$bu12 move container to workspace $ws12
 
 
 set $bu13 Print
-set $ws13 "13 - Schoology"
-set $dc13 "firefox --new-window https://bethtfiloh.schoology.com/home#/?_k=j256ik"
+set $ws13 "13 - NULL"
+set $dc13 ""
 
 bindsym $mod+$bu13 workspace $ws13;    set $dc $dc13
 bindsym $mod+Shift+$bu13 move container to workspace $ws13
@@ -112,8 +112,8 @@ bindsym $mod+Shift+$bu14 move container to workspace $ws14
 
 
 set $bu15 Pause
-set $ws15 "15 - NULL"
-set $dc15 ""
+set $ws15 "15 - Mail"
+set $dc15 "thunderbird"
 
 bindsym $mod+$bu15 workspace $ws15;    set $dc $dc15
 bindsym $mod+Shift+$bu15 move container to workspace $ws15

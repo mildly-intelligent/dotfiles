@@ -1,0 +1,133 @@
+//====================================================================================================//
+// Waybar Configuration File                                                                          //
+//----------------------------------------------------------------------------------------------------//
+// Purpose: Creates a minimalistic (yet functional) waybar at                                         //
+// the top of the screen.                                                                             //
+// themes and colors, set the wallpaper, and more.                                                    //
+//                                                                                                    //
+// License: Creative Commons Attribution 4.0 International                                            //
+//====================================================================================================//
+
+{
+    "layer": "top",
+    "position": "top",
+    "height": 36,
+    "spacing": 4,
+    "margin-top": 0,
+    "margin-bottom": 0,
+
+    // Choose the order of the modules
+    "modules-center": [
+        "sway/workspaces",
+        "tray"
+    ],
+    "modules-left": [
+        "custom/shutdown",
+        "custom/restart",
+        "custom/logout",
+        "custom/sleep",
+        "custom/hibernate"
+    ],
+
+    "modules-right": [
+        "custom/network",
+        "custom/audio",
+        "clock",
+        "custom/notification"
+    ],
+
+    // Configuration for individual modules
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": false,
+        "format": "{name}",
+    },
+
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10,
+    },
+
+    "clock": {
+        "format": "{:%b %d %Y | %I:%M %p}",
+        "tooltip": false,
+    },
+
+
+    "custom/notification": {
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+            "notification": "<span foreground='red'><sup></sup></span>",
+            "none": "<span foreground='#1f1f1f'><sup></sup></span>",
+            "dnd-notification": "<span foreground='red'><sup></sup></span>",
+            "dnd-none": "<span foreground='#1f1f1f'><sup></sup></span>"
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    },
+
+
+    "custom/network": {
+        "exec": "/home/mildly-intelligent/.config/waybar/network.sh 2> /tmp/network-error.txt",
+        "format": {},
+        "tooltip": false,
+        "interval": 150,
+    },
+
+    "custom/audio": {
+        "exec": "/home/mildly-intelligent/.config/waybar/audio.sh",
+        "format": {},
+        "tooltip": false,
+        "interval":1,
+    },
+
+
+    "custom/spacer": {
+        "format": " ",
+    },
+
+    "custom/shutdown": {
+        "on-triple-click": "exec $HOME/.config/waybar/power.sh shutdown",
+        "format": "{icon}",
+        "format-icons": [""],
+        "tooltip":true,
+        "tooltip-format": "Shutdown",
+    },
+
+    "custom/restart": {
+        "on-triple-click": "exec $HOME/.config/waybar/power.sh restart",
+        "format": "{icon}",
+        "format-icons": [""],
+        "tooltip":true,
+        "tooltip-format": "Restart",
+    },
+
+    "custom/logout": {
+        "on-click": "exec $HOME/.config/waybar/power.sh logout",
+        "format": "{icon}",
+        "format-icons": ["󰍃"],
+        "tooltip":true,
+        "tooltip-format": "Exit to TTY/DM",
+    },
+
+    "custom/sleep": {
+        "on-double-click": "exec $HOME/.config/waybar/power.sh sleep",
+        "format": "{icon}",
+        "format-icons": ["󰤄"],
+        "tooltip":true,
+        "tooltip-format": "Suspend to RAM",
+    },
+
+    "custom/hibernate": {
+        "on-double-click": "exec $HOME/.config/waybar/power.sh hibernate",
+        "format": "{icon}",
+        "format-icons": ["󰜗"],
+        "tooltip":true,
+        "tooltip-format": "Suspend to Disk",
+    },
+}

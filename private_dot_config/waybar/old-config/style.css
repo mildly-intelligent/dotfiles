@@ -1,0 +1,153 @@
+* {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14.5px;
+    min-height: 0;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: whitesmoke;
+}
+
+#clock {
+    border-radius: 20px;
+    background: #1f1f1f;
+    margin-right: 4px;
+    padding: 2px 8px;
+}
+
+#custom-network {
+    border-radius: 20px;
+    background: #1f1f1f;
+    margin-right: 4px;
+    padding: 2px 8px;
+}
+
+#tray {
+    border-radius: 20px;
+    background: #1f1f1f;
+    color: #ffffff;
+    padding: 2px 9px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+    background: transparent;
+    color: #ffffff;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background: transparent;
+    color: #ffffff;
+}
+
+window#waybar {
+    background: transparent;
+    border-bottom: 1px solid #332b2b;
+    transition-duration: .2s;
+    transition-property: background-color;
+}
+
+#workspaces button:hover {
+    /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+    background: #1f1f1f;
+    box-shadow: inherit;
+    color: #ffffff;
+}
+
+#workspaces button {
+    background: transparent;
+    color: #ffffff;
+    margin-left: 2px;
+    margin-right: 2px;
+    opacity: 0.7;
+}
+
+#workspaces button.focused {
+    border-radius: 20px;
+    background: #453e3d;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+    border-radius: 20px;
+}
+
+
+/* Custom Stuff */
+#custom-audio {
+    border-radius: 20px;
+    background: #1f1f1f;
+    color: #ffffff;
+    padding: 2px 9px;
+}
+
+#custom-notification {
+    border-radius: 20px;
+    background: #1f1f1f;
+    color: #ffffff;
+    padding: 5px 10px;
+    padding-left: 13px;
+    font-size: large;
+}
+#custom-notification.dnd-none  {
+    border-radius: 20px;
+    background: #1f1f1f;
+    color: #ffffff;
+    padding: 5px 13px;
+    padding-left: 10px;
+    font-size: large;
+}
+#custom-notification.dnd-notification  {
+    border-radius: 20px;
+    background: #1f1f1f;
+    color: #ffffff;
+    padding: 5px 13px;
+    padding-left: 10px;
+    font-size: large;
+}
+
+
+
+#custom-shutdown {
+    background: transparent;
+    color: #ffffff;
+    opacity: 0.7;
+    padding: 1px 5px;
+    font-size: 20px;
+}
+
+#custom-restart {
+    background: transparent;
+    color: #ffffff;
+    opacity: 0.7;
+    padding: 1px 4px;
+    font-size: 22px;
+}
+
+#custom-logout {
+    background: transparent;
+    color: #ffffff;
+    opacity: 0.7;
+    padding: 1px 4px;
+    font-size: 22px;
+}
+
+#custom-sleep {
+    background: transparent;
+    color: #ffffff;
+    opacity: 0.7;
+    padding: 1px 4px;
+    font-size: 22px;
+}
+
+#custom-hibernate {
+    background: transparent;
+    color: #ffffff;
+    opacity: 0.7;
+    padding: 1px 4px;
+    font-size: 22px;
+}

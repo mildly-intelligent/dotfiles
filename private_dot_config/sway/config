@@ -44,7 +44,7 @@ gaps outer -10
 default_border pixel 3
 
 # Set the Wallpaper:
-output * bg $HOME/Pictures/wallpapers/.png fill
+output * bg $HOME/Pictures/Wallpapers/.png fill
 
 
 #================#

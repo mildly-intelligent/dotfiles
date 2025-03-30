@@ -73,7 +73,7 @@ bindsym $mod+Shift+$bu9 move container to workspace $ws9
 
 set $bu10 F10
 set $ws10 "10 - Files"
-set $dc10 "nemo"
+set $dc10 "foot ranger ~/Bookmarks"
 
 bindsym $mod+$bu10 workspace $ws10;    set $dc $dc10
 bindsym $mod+Shift+$bu10 move container to workspace $ws10

@@ -21,7 +21,7 @@ F8;     8 - NULL;
 
 # System:
 F9;     9 - Terminal;       foot
-F10;   10 - Files;          nemo
+F10;   10 - Files;          foot ranger ~/Bookmarks
 F11;   11 - System monitor; foot btop
 F12;   12 - NULL;           
 

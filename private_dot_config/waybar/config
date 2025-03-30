@@ -19,9 +19,9 @@
     ],
     "sway/window": {
         "format": "{}",
-        "max-length": 35,
+        "max-length": 100,
         "rewrite": {
-            "": "Harsh"
+            "": "No Windows Open!"
         },
         "separate-outputs": true,
     },
@@ -36,10 +36,6 @@
         "spacing": 10,
     },
     
-
-    "clock": {
-        
-    },
 
     "clock#date": {
         "type": "clock",

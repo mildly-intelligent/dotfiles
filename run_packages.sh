@@ -46,3 +46,4 @@ sudo pacman -S --noconfirm blender
 yay -S --noconfirm appimagelauncher
     yay -S --noconfirm visual-studio-code-bin
     yay -S --noconfirm spotify spicetify-cli
+    yay -S --noconfirm vim-plug

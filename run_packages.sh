@@ -37,9 +37,12 @@ sudo pacman -S --noconfirm blender
     sudo pacman -S --noconfirm vlc
     sudo pacman -S --noconfirm unzip
     sudo pacman -S --noconfirm ttf-hack-nerd ttf-noto-nerd terminus-font
-    sudo pacman -S --noconfirm ranger
+    sudo pacman -S --noconfirm yazi
     sudo pacman -S --noconfirm steam
     sudo pacman -S --noconfirm rocm-opencl-runtime
+    sudo pacman -S --noconfirm libsixel
+    sudo pacman -S --noconfirm nvim
+  
 yay -S --noconfirm appimagelauncher
     yay -S --noconfirm visual-studio-code-bin
     yay -S --noconfirm spotify spicetify-cli

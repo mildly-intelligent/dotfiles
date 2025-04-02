@@ -8,25 +8,25 @@
 
 
 # Entertainment:
-F1;     1 - Gaming;         steam
-F2;     2 - Browsing;       firefox
-F3;     3 - Communication;  discord
-F4;     4 - Music;          spotify
+F1;     1 - Gaming;         steam;
+F2;     2 - Browsing;       firefox;
+F3;     3 - Communication;  discord;
+F4;     4 - Music;          spotify;
 
 # Development:
-F5;     5 - Coding;         code
-F6;     6 - Game Dev;       godot
-F7;     7 - 3D Art;         blender
+F5;     5 - Coding;         code;        neovim
+F6;     6 - Game Dev;       godot;
+F7;     7 - 3D Art;         blender;
 F8;     8 - NULL;           
 
 # System:
-F9;     9 - Terminal;       foot
-F10;   10 - Files;          foot ranger ~/Bookmarks
-F11;   11 - System monitor; foot btop
+F9;     9 - Terminal;       foot;
+F10;   10 - Files;          foot yazi;   nemo
+F11;   11 - System monitor; foot btop;
 F12;   12 - NULL;           
 
 # Office:
 Print; 13 - NULL;           
 # Why is this button name so fucking long.
-Scroll_Lock; 14 - Office;   flatpak run org.libreoffice.LibreOffice
-Pause; 15 - Mail;           thunderbird
+Scroll_Lock; 14 - Office;   libreoffice;
+Pause; 15 - Mail;           thunderbird;

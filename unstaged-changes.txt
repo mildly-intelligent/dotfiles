@@ -1,0 +1,14 @@
+# Unstaged Changes:
+This file is for listing changes before I've staged them so I won't forget what I've changed when I commit.
+
+## Major:
+
+
+## Minor:
+
+
+## App changes:
+
+
+## Packages:
+

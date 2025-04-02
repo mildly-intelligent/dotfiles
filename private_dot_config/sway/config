@@ -190,6 +190,7 @@ bindsym $mod+space exec wofi --show drun  -i | xargs swaymsg exec --
 
 # Default application for the current workspace (see ./workspaces):
 bindsym $mod+$alt+space exec $dc
+bindsym $mod+$alt+Shift+space exec $dca
 
 # Take screenshot:
 bindsym ctrl+$alt+Tab exec $CONFIG_DIR/sway/screenshot.sh

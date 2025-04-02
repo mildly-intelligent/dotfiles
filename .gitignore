@@ -1,2 +1,6 @@
 # Don't update the spicetify themes
-./private_dot_config.spicetify/private_Themes
+./private_dot_config/spicetify/private_Themes
+
+# This file is for me so I don't forget the changes I've made since last commit.
+# Because it will always be cleared before I commit there isn't a point adding it.
+./unstaged-changes.txt

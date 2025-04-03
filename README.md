@@ -2,7 +2,8 @@
 
 
 I decided to start tracking my dotfiles on github after I learned about chezmoi from a youtube video.
-I mostly did this so I can port my config files to my laptop but if anyone likes my config files feel free to take them.
+I mostly did this so I can port my config files to my laptop but if anyone likes my config files feel free to take them. \
+Please not this picture isn't really what my workflow looks like... at all. But hey, it looks cool. ![alt text](unixporn-like-screenshot-even-though-no-body-actually-uses-thier-computer-like-this.png)
 
 
 # Apps:
@@ -13,7 +14,8 @@ I mostly did this so I can port my config files to my laptop but if anyone likes
 ### Distro & Kernel:
 For my distro, I went with Arch because memes. Also, after using it for a while, I did enjoy its package manager and the general customizability of it.
 (I mostly use it as opposed to something else for the memes tho.)
-I use linux-lts because for some reason that's what grub defaults to. I've tried changing it but it kept using LTS. I'm pretty sure I even uninstalled it so I have zombie Linux. ![zombie linux](https://www.gamingonlinux.com/uploads/articles/tagline_images/1657036839id962gol.jpg).
+I use linux-lts because for some reason that's what grub defaults to. I've tried changing it but it kept using LTS. I'm pretty sure I even uninstalled it so I have zombie Linux. \
+![zombie linux](https://www.gamingonlinux.com/uploads/articles/tagline_images/1657036839id962gol.jpg)
 
 ### Display Server:
 Wayland because that's what KDE was using and I didn't feel like switching DS's when moving to SwayWM.
@@ -34,14 +36,16 @@ For my Window Manager, I use SwayFX (a fork of Sway), I've heard good things abo
 ### Status Bar:
 I use waybar.
 I'm using a custom fork of someone's dotfiles, I thought I wrote down the github repo for their dotfiles but I guess not.
-I'm pretty sure [this](https://github.com/harsh-m-patil/.dotfiles) is it but I'm not sure.
+I'm pretty sure [this](https://github.com/harsh-m-patil/.dotfiles) is it but I'm not sure. \
+![alt text](waybar.png)
 
 ### Launcher:
 Mostly I use a custom system where each workspace has a default application and an alt application called with Meta+Alt+Space and Meta+Alt+Shift+Space respectively.
 If I need to launch an app that isn't there, I'll use rofi.
 
 ### Notification Daemon:
-Not entirely sure what a daemon is (or if I spelled it right), but the notification manager I use is SwayNC because it works fine and I really jsut wanted a notification manager at all.
+Not entirely sure what a daemon is (or if I spelled it right), but the notification manager I use is SwayNC because it works fine and I really just wanted a notification manager at all. \
+![alt text](swaync.png)
 
 
 ## Terminal:
@@ -55,6 +59,8 @@ For shell scripting I also use bash because 1) it's more common and there's more
 
 ### Powerline:
 I use oh-my-posh. I got halfway through making a custom powerline theme but it's ***sooo*** annoying so I gave up and might start again later. Currently I use the blue-owl theme I think.
+
+![alt text](foot.png)
 
 
 ## Editor and Developement:

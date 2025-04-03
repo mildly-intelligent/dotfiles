@@ -4,3 +4,6 @@
 # This file is for me so I don't forget the changes I've made since last commit.
 # Because it will always be cleared before I commit there isn't a point adding it.
 ./unstaged-changes.txt
+
+# Don't want to have multiple versions of the pngs. That would take up a lot of space.
+*.png

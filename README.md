@@ -3,7 +3,7 @@
 
 I decided to start tracking my dotfiles on github after I learned about chezmoi from a youtube video.
 I mostly did this so I can port my config files to my laptop but if anyone likes my config files feel free to take them. \
-Please not this picture isn't really what my workflow looks like... at all. But hey, it looks cool. ![alt text](unixporn-like-screenshot-even-though-no-body-actually-uses-thier-computer-like-this.png)
+Please not this picture isn't really what my workflow looks like... at all. But hey, it looks cool. ![alt text](./screenshots/unixporn-like-screenshot-even-though-no-body-actually-uses-thier-computer-like-this.png)
 
 
 # Apps:
@@ -21,7 +21,7 @@ I use linux-lts because for some reason that's what grub defaults to. I've tried
 Wayland because that's what KDE was using and I didn't feel like switching DS's when moving to SwayWM.
 
 ### Login/Display Manager:
-I'm using ly because GDM comes with all of GNOME and SDDM was a wee bit broken (froze everytime I tried to log in). Using the shell and just running `sway` didn't work either because my keyboard would constantly send the null character `^@` until I unplugged it and plugged it back in. Because of that it couldn't properly read my password so it was hella janky to log in. Also ly's great.
+I'm using ly because GDM comes with all of GNOME and SDDM was a wee bit broken (froze every time I tried to log in). Using the shell and just running `sway` didn't work either because my keyboard would constantly send the null character `^@` until I unplugged it and plugged it back in. Because of that it couldn't properly read my password so it was hella janky to log in. Also ly's great.
 
 ### Init System:
 Systemd? I didn't even know there were alternatives before I started writing this README.
@@ -30,14 +30,14 @@ Systemd? I didn't even know there were alternatives before I started writing thi
 ## Desktop
 
 ### DE/WM:
-No Desktop Enviornment, I used to use KDE Plasma but switched to sway because a youtube video convinced me to try Tiling Window Managers and I really liked it.
+No Desktop Environment, I used to use KDE Plasma but switched to sway because a youtube video convinced me to try Tiling Window Managers and I really liked it.
 For my Window Manager, I use SwayFX (a fork of Sway), I've heard good things about Hyprland too but I've also seen a lot of people saying that it isn't fully developed yet so I'll hold off trying it for now.
 
 ### Status Bar:
 I use waybar.
 I'm using a custom fork of someone's dotfiles, I thought I wrote down the github repo for their dotfiles but I guess not.
 I'm pretty sure [this](https://github.com/harsh-m-patil/.dotfiles) is it but I'm not sure. \
-![alt text](waybar.png)
+![alt text](./screenshots/waybar.png)
 
 ### Launcher:
 Mostly I use a custom system where each workspace has a default application and an alt application called with Meta+Alt+Space and Meta+Alt+Shift+Space respectively.
@@ -45,7 +45,7 @@ If I need to launch an app that isn't there, I'll use rofi.
 
 ### Notification Daemon:
 Not entirely sure what a daemon is (or if I spelled it right), but the notification manager I use is SwayNC because it works fine and I really just wanted a notification manager at all. \
-![alt text](swaync.png)
+![alt text](./screenshots/swaync.png)
 
 
 ## Terminal:
@@ -60,26 +60,29 @@ For shell scripting I also use bash because 1) it's more common and there's more
 ### Powerline:
 I use oh-my-posh. I got halfway through making a custom powerline theme but it's ***sooo*** annoying so I gave up and might start again later. Currently I use the blue-owl theme I think.
 
-![alt text](foot.png)
+![alt text](./screenshots/foot.png)
 
 
 ## Editor and Developement:
 
 ### Primary Editor:
-VSCode, I started off with notepad++ in 5th grade where I was first introduced to programming (and where I fell in love with it). After a while, I picked up Python and used the IDLE shell for a while until I tried learning Java. For Java developement, I used Intellij Idea Community Edition which also had Python support. I think my friend showed me VSCode for the first time and I loved it enough that I've used it ever since.
+VSCode, I started off with notepad++ in 5th grade where I was first introduced to programming (and where I fell in love with it). After a while, I picked up Python and used the IDLE shell for a while until I tried learning Java. For Java development, I used Intellij Idea Community Edition which also had Python support. I think my friend showed me VSCode for the first time and I loved it enough that I've used it ever since. \
+![alt text](./screenshots/vscode.png)
 
 ### Terminal Text Editor:
 So I was getting tired of Nano's goofiness so I was looking for alternatives and in that search, tried learning NeoVim (what is the correct capitalization btw?) mostly for the memes.
 I ended up liking it enough that I fully switched from nano.
 I'm using the lualine and catppuccin (my beloved) packages.
+![alt text](./screenshots/nvim.png)
 
 ## File Management:
 
 
 ### Primary File Manager:
 I was getting a bit frustrated with nemo (now my fallback file manager) because of how I had to use my mouse a lot as opposed to a lot of the rest of my system so I went looking for a terminal file manager.
-In my journey I found NNN (the configuration was way too wierd), Ranger (I couldn't get it to do what I wanted), SuperFile (I'm still keeping my eye on that one for when it gets further along in developement because it was almost perfect), and finally, Yazi.
-For Yazi, I have a catppuccin (I can't get enough of this theme, seriously it's unhealthy) theme and yamb for bookmarks. I've fully customized the keybindings (it was so painful) and it's almost perfect (perfection for me would be somewhere in between Yazi and SuperFile).
+In my journey I found NNN (the configuration was way too weird), Ranger (I couldn't get it to do what I wanted), SuperFile (I'm still keeping my eye on that one for when it gets further along in development because it was almost perfect), and finally, Yazi.
+For Yazi, I have a catppuccin (I can't get enough of this theme, seriously it's unhealthy) theme and yamb for bookmarks. I've fully customized the keybindings (it was so painful) and it's almost perfect (perfection for me would be somewhere in between Yazi and SuperFile). \
+![alt text](yazi.png)
 
 ### GUI File Manger:
 For things that require a GUI, I use nemo (cinnamon's file manger).

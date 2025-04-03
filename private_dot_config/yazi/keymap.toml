@@ -1,0 +1,184 @@
+[manager]
+keymap = []
+
+
+# Closing
+[[manager.append_keymap]]   # escape --all
+on = [ "<Esc>" ]
+run = "escape --all"
+desc = "Cancels the current operation"
+
+[[manager.append_keymap]]   # quit
+on = [ "Q" ]
+run = "quit"
+desc = "Exits Yazi"
+
+[[manager.append_keymap]]   # close
+on = [ "q" ]
+run = "close"
+desc = "Closes the current tab"
+
+
+# Navigation
+[[manager.append_keymap]]   # arrow +1
+on = [ "<Down>" ]
+run = "arrow +1"
+desc = "Move the arrow down 1"
+
+[[manager.append_keymap]]   # arrow -1
+on = [ "<Up>" ]
+run = "arrow -1"
+desc = "Move the arrow up 1"
+
+[[manager.append_keymap]]   # arrow +10
+on = [ "<PageDown>" ]
+run = "arrow +10"
+desc = "Move the arrow down 10"
+
+[[manager.append_keymap]]   # arrow -10
+on = [ "<PageUp>" ]
+run = "arrow -10"
+desc = "Move the arrow up 10"
+
+[[manager.append_keymap]]   # leave
+on = [ "<Left>" ]
+run = "leave"
+desc = "Enter the parent directory"
+
+[[manager.append_keymap]]   # enter
+on = [ "<Right>" ]
+run = "enter"
+desc = "Enter the selected directory"
+
+# Vim keybinds
+[[manager.append_keymap]]   # leave
+on = [ "h" ]
+run = "leave"
+desc = "Enter the parent directory"
+
+[[manager.append_keymap]]   # arrow +1
+on = [ "j" ]
+run = "arrow +1"
+desc = "Move the arrow down 1"
+
+[[manager.append_keymap]]   # arrow -1
+on = [ "k" ]
+run = "arrow -1"
+desc = "Move the arrow up 1"
+
+[[manager.append_keymap]]   # enter
+on = [ "l" ]
+run = "enter"
+desc = "Enter the selected directory"
+
+
+# Selection
+[[manager.append_keymap]]   # toggle
+on = [ "<C-Enter>" ]
+run = "toggle"
+desc = "Toggles weather or not the file is selected"
+
+[[manager.append_keymap]]   # toggle_all
+on = [ "<C-a>" ]
+run = "toggle_all"
+desc = "Selects and deselects all files in the directory"
+
+
+# Opening
+[[manager.append_keymap]]   # open --interactive
+on = [ "<Enter>" ]
+run = "open interactive"
+desc = "Opens a UI to select how to open the selected file(s)"
+
+
+# Copy-pasting
+[[manager.append_keymap]]   # yank
+on = [ "c", ]
+run = "yank"
+desc = "Copies the selected files"
+
+[[manager.append_keymap]]   # yank --cut
+on = [ "x" ]
+run = "yank --cut"
+desc = "Copies the selected files and deletes them"
+
+[[manager.append_keymap]]   # paste
+on = [ "p" ]
+run = "paste"
+desc = "Pastes the files in the current directory"
+
+
+# File operations
+[[manager.append_keymap]]   # link
+on = [ "<C-l>" ]
+run = "link"
+desc = "Makes a symlink to the copied file(s)"
+
+[[manager.append_keymap]]   # remove
+on = [ "<Delete>" ]
+run = "remove"
+desc = "Moves the selected file(s) to the trash"
+
+[[manager.append_keymap]]   # create
+on = [ "n" ]
+run = "create"
+desc = "Creates a new file, if it ends with a `/`, it will be a directory"
+
+[[manager.append_keymap]]   # rename --cursor=before_ext
+on = [ "<F2>" ]
+run = "rename --cursor=before_ext"
+desc = "Renames the selected file."
+
+[[manager.append_keymap]]   # copy path
+on = [ "<C-S-c>" ]
+run = "copy path"
+desc = "Copies the path of the selected file(s) to the clipboard."
+
+
+# Other
+[[manager.append_keymap]]   # shell --interactive
+on = [ ":" ]
+run = "shell --interactive"
+desc = "Opens a shell where you can enter commands"
+
+[[manager.append_keymap]]   # hidden toggle
+on = [ "." ]
+run = "hidden toggle"
+desc = "Toggles the visibility of hidden files"
+
+[[manager.append_keymap]]   # find --smart
+on = [ "<C-f>" ]
+run = "find --smart"
+desc = "Find a file in the current directory"
+
+[[manager.append_keymap]]   # find --smart
+on = [ "/" ]
+run = "find --smart"
+desc = "Find a file in the current directory"
+
+[[manager.append_keymap]]   # tab_create --current
+on = [ "<C-n>" ]
+run = "tab_create --current"
+desc = "Creates a new tab"
+
+[[manager.append_keymap]]   # help
+on = [ "?" ]
+run = "help"
+desc = "Open help menu"
+
+
+# yamb
+[[manager.prepend_keymap]]
+on = [ "b" ]
+run = "plugin yamb save"
+desc = "Add bookmark"
+
+[[manager.prepend_keymap]]
+on = [ "g" ]
+run = "plugin yamb jump_by_key"
+desc = "Jump bookmark by key"
+
+[[manager.prepend_keymap]]
+on = [ "G" ]
+run = "plugin yamb jump_by_fzf"
+desc = "Jump bookmark by fzf"

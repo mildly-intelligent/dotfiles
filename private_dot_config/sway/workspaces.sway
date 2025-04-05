@@ -63,8 +63,8 @@ bindsym $mod+Shift+$bu7 move container to workspace $ws7
 
 
 set $bu8 F8
-set $ws8 "8 - NULL"
-set $dc8 ""
+set $ws8 "8 - Git"
+set $dc8 "foot lazygit"
 set $dca8 ""
 
 bindsym $mod+$bu8 workspace $ws8;    set $dc $dc8;    set $dca $dca8

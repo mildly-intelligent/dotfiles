@@ -75,6 +75,9 @@ I ended up liking it enough that I fully switched from nano.
 I'm using the lualine and catppuccin (my beloved) packages.
 ![alt text](./screenshots/nvim.png)
 
+### Git Manager:
+I recently remembered hearing about LazyGit and thought "why not" and it was the best thing and I will never go back to raw git commands.
+
 ## File Management:
 
 

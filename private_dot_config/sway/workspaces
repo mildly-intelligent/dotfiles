@@ -17,7 +17,7 @@ F4;     4 - Music;          spotify;
 F5;     5 - Coding;         code;        neovim
 F6;     6 - Game Dev;       godot;
 F7;     7 - 3D Art;         blender;
-F8;     8 - NULL;           
+F8;     8 - Git;            foot lazygit;           
 
 # System:
 F9;     9 - Terminal;       foot;

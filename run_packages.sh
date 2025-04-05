@@ -42,6 +42,7 @@ sudo pacman -S --noconfirm blender
     sudo pacman -S --noconfirm rocm-opencl-runtime
     sudo pacman -S --noconfirm libsixel
     sudo pacman -S --noconfirm nvim
+    sudo pacman -S --noconfirm lazygit
   
 yay -S --noconfirm appimagelauncher
     yay -S --noconfirm visual-studio-code-bin

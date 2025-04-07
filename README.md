@@ -30,8 +30,8 @@ Systemd? I didn't even know there were alternatives before I started writing thi
 ## Desktop
 
 ### DE/WM:
-No Desktop Environment, I used to use KDE Plasma but switched to sway because a youtube video convinced me to try Tiling Window Managers and I really liked it.
-For my Window Manager, I use SwayFX (a fork of Sway), I've heard good things about Hyprland too but I've also seen a lot of people saying that it isn't fully developed yet so I'll hold off trying it for now.
+I recently switched to hyprland because I've heard great things about it. Most of the pretty dotfilees I see online are using hyprland and I thought that I might as well give it a shot.
+It turned out to be great. Before that I was using SwayFX and before even that KDE Plasma.
 
 ### Status Bar:
 I use waybar.

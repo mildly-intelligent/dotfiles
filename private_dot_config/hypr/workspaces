@@ -14,10 +14,10 @@ F3;     3 - Communication;  discord;
 F4;     4 - Music;          spotify;
 
 # Development:
-F5;     5 - Coding;         code;        neovim
-F6;     6 - Game Dev;       godot;
-F7;     7 - 3D Art;         blender;
-F8;     8 - Git;            foot lazygit;           
+F5;     5 - Coding;         code;        foot neovim
+F6;     6 - Git;            foot lazygit;
+F7;     7 - Game Dev;       godot;
+F8;     8 - 3D Art;         blender;
 
 # System:
 F9;     9 - Terminal;       foot;

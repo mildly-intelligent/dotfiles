@@ -12,8 +12,8 @@ sudo pacman -S --noconfirm wayland-protocols
     sudo pacman -S --noconfirm wlroots
     sudo pacman -S --noconfirm wl-clipboard
     sudo pacman -S --noconfirm grim slurp
-    sudo pacman -S --noconfirm neofetch 
-yay -S --noconfirm swayfx-git
+    sudo pacman -S --noconfirm neofetch
+    sudo pacman -S --noconfirm hyprland
 
 # non-important:
 sudo pacman -S --noconfirm blender

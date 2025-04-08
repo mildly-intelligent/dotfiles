@@ -5,28 +5,29 @@
 ## BUTTON, this is the button that will be bound tho that workspace.
 ## NAME, this is the name of the workspace in waybar.
 ## COMMAND, (optional, if omitted, the semicolon must still be there) this is the default command to run on $mod+$alt+Space.
+## ALTCOMMAND, (optional), this is the secondary command to run on $mod+$alt+Shift+Space
 
 
 # Entertainment:
-F1;     1 - Gaming;         steam;
-F2;     2 - Browsing;       firefox;
-F3;     3 - Communication;  discord;
-F4;     4 - Music;          spotify;
+F1;     ; steam;
+F2;     󰈹; firefox;
+F3;     ; discord;
+F4;     ; spotify;
 
 # Development:
-F5;     5 - Coding;         code;        foot neovim
-F6;     6 - Git;            foot lazygit;
-F7;     7 - Game Dev;       godot;
-F8;     8 - 3D Art;         blender;
+F5;     ; code;        foot neovim
+F6;     ; foot lazygit;
+F7;     󰂫; blender;
+F8;     ; godot;
 
 # System:
-F9;     9 - Terminal;       foot;
-F10;   10 - Files;          foot yazi;   nemo
-F11;   11 - System monitor; foot btop;
-F12;   12 - NULL;           
+F9;     ; foot;
+F10;    ; foot yazi;   nemo
+F11;    ; foot btop;
+F12;    ; 
 
 # Office:
-Print; 13 - NULL;           
+Print;  ; 
 # Why is this button name so fucking long.
-Scroll_Lock; 14 - Office;   libreoffice;
-Pause; 15 - Mail;           thunderbird;
+Scroll_Lock; ;    libreoffice;
+Pause;  ; thunderbird;

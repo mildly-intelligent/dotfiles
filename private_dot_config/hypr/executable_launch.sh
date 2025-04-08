@@ -6,10 +6,10 @@ case $(hyprctl activeworkspace -j | jq -r '.id') in
     2) dc="firefox";ac="" ;;
     3) dc="discord";ac="" ;;
     4) dc="spotify";ac="" ;;
-    5) dc="code";ac="neovim" ;;
-    6) dc="godot";ac="" ;;
+    5) dc="code";ac="foot neovim" ;;
+    6) dc="foot lazygit";ac="" ;;
     7) dc="blender";ac="" ;;
-    8) dc="foot lazygit";ac="" ;;
+    8) dc="godot";ac="" ;;
     9) dc="foot";ac="" ;;
     10) dc="foot yazi";ac="nemo" ;;
     11) dc="foot btop";ac="" ;;

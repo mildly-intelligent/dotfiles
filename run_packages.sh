@@ -8,12 +8,14 @@
 sudo pacman -S --noconfirm wayland-protocols
     sudo pacman -S --noconfirm xorg-server xorg-xwayland
     sudo pacman -S --noconfirm ly
-    sudo pacman -S --noconfirm wofi waybar swaybg swayimg
+    sudo pacman -S --noconfirm wofi waybar swayimg
     sudo pacman -S --noconfirm wlroots
     sudo pacman -S --noconfirm wl-clipboard
     sudo pacman -S --noconfirm grim slurp
     sudo pacman -S --noconfirm neofetch
     sudo pacman -S --noconfirm hyprland
+    sudo pacman -S --noconfirm hyprlock hyprpaper
+yay -S --noconfirm wlogout
 
 # non-important:
 sudo pacman -S --noconfirm blender

@@ -4,10 +4,10 @@
     "margin-right": 10,
     "height" : 30,
     "modules-left": [
-      "sway/window",
+	"hyprland/window"
     ],
     "modules-center": [
-      "sway/workspaces",
+      "hyprland/workspaces",
       "tray",
     ],
     "modules-right": [
@@ -17,18 +17,18 @@
     "clock#date", "clock#time",
     "custom/notification",
     ],
-    "sway/window": {
-        "format": "{}",
-        "max-length": 100,
-        "rewrite": {
-            "": "No Windows Open!"
-        },
-        "separate-outputs": true,
+    
+    "hyprland/window": {
+      "format": "{}",
+      "max-length": 35,
+      "rewrite": {
+        "": "No Windows Open!"
+      },
     },
-    "sway/workspaces": {
-        "format": "{}",
-        "on-click": "activate",
-        "sort-by-number": true,
+    "hyprland/workspaces": {
+      "format": "{icon}",
+      "on-click": "activate",
+      "sort-by-number": true,
     },
 
     "tray": {

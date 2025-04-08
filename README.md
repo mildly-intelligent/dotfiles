@@ -47,6 +47,9 @@ If I need to launch an app that isn't there, I'll use rofi.
 Not entirely sure what a daemon is (or if I spelled it right), but the notification manager I use is SwayNC because it works fine and I really just wanted a notification manager at all. \
 ![alt text](./screenshots/swaync.png)
 
+### Logout/Lock menu:
+For the logout menu, I used a modified config of [this](https://github.com/justinmdickey/publicdots/) for hyprlock because the whole hypr ecosystem is pretty great.
+
 
 ## Terminal:
 

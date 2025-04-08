@@ -34,14 +34,14 @@ while read line; do
     echo ""                                                >> $export_file
     echo "bind = \$mod, \$bu$i, workspace, $i"             >> $export_file
     echo "bind = \$mod SHIFT, \$bu$i, movetoworkspace, $i" >> $export_file
-    echo "workspace = $i, name:$ws"                        >> $export_file
+    echo "workspace = $i, defaultName:$ws"                        >> $export_file
     echo ""                                                >> $export_file
     echo ""                                                >> $export_file
 
     echo "    $i) dc=\"$dc\";ac=\"$ac\" ;;" >> $launch_script
 
     i=$(( $i + 1 ))
-done < $HOME/.config/sway/workspaces
+done < $HOME/.config/hypr/workspaces
 
 IFS="$old_IFS"
 
@@ -49,7 +49,7 @@ IFS="$old_IFS"
 echo "    *) dc=\"\";ac=\"\" ;;"      >> $launch_script
 echo "esac"                           >> $launch_script
 echo ""                               >> $launch_script
-echo "if [[ \$1 == \"dc\" ]]; then"    >> $launch_script
+echo "if [[ \$1 == \"dc\" ]]; then"   >> $launch_script
 echo "    eval \"\$dc\" &"            >> $launch_script
 echo "elif [[ \$1 == \"ac\" ]]; then" >> $launch_script
 echo "    eval \"\$dc\" &"            >> $launch_script

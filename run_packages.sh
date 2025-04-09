@@ -8,7 +8,7 @@
 sudo pacman -S --noconfirm wayland-protocols
     sudo pacman -S --noconfirm xorg-server xorg-xwayland
     sudo pacman -S --noconfirm ly
-    sudo pacman -S --noconfirm wofi waybar swayimg
+    sudo pacman -S --noconfirm rofi waybar swayimg
     sudo pacman -S --noconfirm wlroots
     sudo pacman -S --noconfirm wl-clipboard
     sudo pacman -S --noconfirm grim slurp
@@ -19,7 +19,7 @@ yay -S --noconfirm wlogout
 
 # non-important:
 sudo pacman -S --noconfirm blender
-    sudo pacman -S --noconfirm btop	 
+    sudo pacman -S --noconfirm btop
     sudo pacman -S --noconfirm cmatrix
     sudo pacman -S --noconfirm cowsay
     sudo pacman -S --noconfirm fd
@@ -27,7 +27,7 @@ sudo pacman -S --noconfirm blender
     sudo pacman -S --noconfirm firefox
     sudo pacman -S --noconfirm fish
     sudo pacman -S --noconfirm flatpak
-    sudo pacman -S --noconfirm foot
+    sudo pacman -S --noconfirm alacritty
     sudo pacman -S --noconfirm fwupd
     sudo pacman -S --noconfirm godot
     sudo pacman -S --noconfirm gparted
@@ -45,8 +45,9 @@ sudo pacman -S --noconfirm blender
     sudo pacman -S --noconfirm libsixel
     sudo pacman -S --noconfirm nvim
     sudo pacman -S --noconfirm lazygit
-  
+
 yay -S --noconfirm appimagelauncher
     yay -S --noconfirm visual-studio-code-bin
     yay -S --noconfirm spotify spicetify-cli
     yay -S --noconfirm vim-plug
+    yay -S --noconfirm lazyvim

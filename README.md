@@ -3,7 +3,7 @@
 
 I decided to start tracking my dotfiles on github after I learned about chezmoi from a YouTube video.
 I mostly did this so I can port my config files to my laptop but if anyone likes my config files feel free to take them. \
-Please note this picture isn't really what my workflow looks like... at all. But hey, it looks cool. ![alt text](https://imgur.com/UHBfbnR)
+Please note this picture isn't really what my workflow looks like... at all. But hey, it looks cool. ![alt text](https://imgur.com/UHBfbnR.png)
 
 
 # Apps:
@@ -37,7 +37,7 @@ It turned out to be great. Before that I was using SwayFX and before even that K
 I use waybar.
 I'm using a custom fork of someone's dotfiles, I thought I wrote down the GitHub repo for their dotfiles but I guess not.
 I'm pretty sure [this](https://github.com/harsh-m-patil/.dotfiles) is it but I'm not sure. \
-![alt text](https://imgur.com/LjOkro1)
+![alt text](https://imgur.com/LjOkro1.png)
 
 ### Launcher:
 Mostly I use a custom system where each workspace has a default application and an alt application called with Meta+Alt+Space and Meta+Alt+Shift+Space respectively.
@@ -62,7 +62,7 @@ For shell scripting I also use bash because 1) it's more common and there's more
 ### Powerline:
 I use oh-my-posh. I got halfway through making a custom powerline theme but it's ***sooo*** annoying so I gave up and might start again later. Currently I use the blue-owl theme I think.
 
-![alt text](https://imgur.com/UKLt6jr)
+![alt text](https://imgur.com/UKLt6jr.png)
 
 
 ## Editor and Developement:
@@ -74,11 +74,11 @@ VSCode, I started off with notepad++ in 5th grade where I was first introduced t
 So I was getting tired of Nano's goofiness so I was looking for alternatives and in that search, tried learning NeoVim (what is the correct capitalization btw?) mostly for the memes.
 I ended up liking it enough that I fully switched from nano.
 I also got LazyVim and that's pretty awesome in general as well.
-![alt text](https://imgur.com/ElP6reh)
+![alt text](https://imgur.com/ElP6reh.png)
 
 ### Git Manager:
 I recently remembered hearing about LazyGit and thought "why not" and it was the best thing and I will never go back to raw git commands.
-![alt text](https://imgur.com/wYkffXC)
+![alt text](https://imgur.com/wYkffXC.png)
 
 ## File Management:
 
@@ -87,7 +87,7 @@ I recently remembered hearing about LazyGit and thought "why not" and it was the
 I was getting a bit frustrated with Nemo (now my fallback file manager) because of how I had to use my mouse a lot as opposed to a lot of the rest of my system so I went looking for a terminal file manager.
 In my journey I found NNN (the configuration was way too weird), Ranger (I couldn't get it to do what I wanted), SuperFile (I'm still keeping my eye on that one for when it gets further along in development because it was almost perfect), and finally, Yazi.
 For Yazi, I have a Catppuccin (I can't get enough of this theme, seriously it's unhealthy) theme and YAMB for bookmarks. I've fully customized the keybindings (it was so painful) and it's almost perfect (perfection for me would be somewhere in between Yazi and SuperFile). \
-![alt text](https://imgur.com/ooAIc1j)
+![alt text](https://imgur.com/ooAIc1j.png)
 
 ### GUI File Manger:
 For things that require a GUI, I use Nemo (cinnamon's file manger).

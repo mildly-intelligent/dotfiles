@@ -4,3 +4,4 @@ hyprpaper &
 waybar    &
 hypridle  &
 swaync    &
+systemctl --user start hyprpolkitagent

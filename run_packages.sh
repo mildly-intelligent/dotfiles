@@ -46,6 +46,7 @@ sudo pacman -S --noconfirm libsixel
 sudo pacman -S --noconfirm nvim
 sudo pacman -S --noconfirm lazygit
 sudo pacman -S --noconfirm cava
+sudo pacman -S --noconfirm noto-fonts-emoji
 
 yay -S --noconfirm appimagelauncher
 yay -S --noconfirm visual-studio-code-bin

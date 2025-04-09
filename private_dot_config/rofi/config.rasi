@@ -1,0 +1,130 @@
+/*
+ *
+ * Author  : Aditya Shakya
+ * Mail    : adi1090x@gmail.com
+ * Github  : @adi1090x
+ * Twitter : @adi1090x
+ *
+ */
+
+configuration {
+    font:                           "Noto Sans Bold 10";
+    show-icons:                     true;
+    icon-theme:                     "Papirus";
+    drun-display-format:            "{name}";
+    disable-history:                false;
+    fullscreen:                     false;
+    hide-scrollbar:                 true;
+    sidebar-mode:                   false;
+}
+
+* {
+  rosewater: #f5e0dc;
+  flamingo: #f2cdcd;
+  pink: #f5c2e7;
+  mauve: #cba6f7;
+  red: #f38ba8;
+  maroon: #eba0ac;
+  peach: #fab387;
+  yellow: #f9e2af;
+  green: #a6e3a1;
+  teal: #94e2d5;
+  sky: #89dceb;
+  sapphire: #74c7ec;
+  blue: #89b4fa;
+  lavender: #b4befe;
+  text: #cdd6f4;
+  subtext1: #bac2de;
+  subtext0: #a6adc8;
+  overlay2: #9399b2;
+  overlay1: #7f849c;
+  overlay0: #6c7086;
+  surface2: #585b70;
+  surface1: #45475a;
+  surface0: #313244;
+  base: #1e1e2e;
+  mantle: #181825;
+  crust: #11111b;
+}
+
+window {
+    background-color:               transparent;
+    text-color:                     @text;
+    border:                         0px;
+    border-radius:                  50px;
+    width:                          40%;
+    location:                       center;
+    x-offset:                       0;
+    y-offset:                       0;
+}
+entry {
+    background-color:               #18182580;
+    text-color:                     inherit;
+    placeholder-color:              @subtext1;
+    expand:                         true;
+    horizontal-align:               0;
+    placeholder:                    "Search";
+    padding:                        0.10% 0% 0% 0%;
+    blink:                          true;
+}
+
+inputbar {
+    children:                       [ entry ];
+    background-color:               #1e1e2e80;
+    text-color:                     @text;
+    expand:                         false;
+    border:                         0% 0% 0% 0%;
+    border-radius:                  25px;
+    margin:                         0% 0% 0% 0%;
+    padding:                        1%;
+}
+
+listview {
+    background-color:               transparent;
+    columns:                        5;
+    lines:                          3;
+    spacing:                        0%;
+    cycle:                          false;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+mainbox {
+    background-color:               inherit;
+    border:                         0% 0% 0% 0%;
+    border-radius:                  0px;
+    children:                       [ inputbar, listview ];
+    spacing:                        2%;
+    padding:                        2% 1% 2% 1%;
+}
+
+element-icon {
+    size:                           64px;
+    border:                         0px;
+}
+
+
+element {
+    background-color:               inherit;
+    text-color:                     inherit;
+    orientation:                    vertical;
+    border-radius:                  15px;
+    padding:                        2% 0% 2% 0%;
+    margin:                         5px;
+}
+element-text {
+    background-color: transparent;
+    text-color:       @text;
+}
+element.normal.normal {
+    background-color: #1e1e2e80;
+    text-color:       inherit;
+}
+element.selected.normal {
+    background-color: #11111bc0;
+    text-color:       inherit;
+}
+element.alternate.normal {
+    background-color: #1e1e2e80;
+    text-color:       inherit;
+}

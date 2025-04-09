@@ -15,16 +15,16 @@ F3;     ; discord;
 F4;     ; spotify;
 
 # Development:
-F5;     ; code;        foot neovim
-F6;     ; foot lazygit;
+F5;     ; code; alacritty -e neovim
+F6;     ; alacritty -e lazygit;
 F7;     󰂫; blender;
 F8;     ; godot;
 
 # System:
-F9;     ; foot;
-F10;    ; foot yazi;   nemo
-F11;    ; foot btop;
-F12;    ; 
+F9;     ; alacritty;
+F10;    ; alacritty -e yazi; nemo
+F11;    ; alacritty -e btop;
+F12;    ;
 
 # Office:
 Print;  ; 

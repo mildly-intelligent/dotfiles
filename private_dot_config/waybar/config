@@ -11,11 +11,11 @@
       "tray",
     ],
     "modules-right": [
-    "pulseaudio",
-    "network",
-    "battery",
-    "clock#date", "clock#time",
-    "custom/notification",
+        "pulseaudio",
+        "network",
+        "battery",
+        "clock#date", "clock#time",
+        "custom/notification",
     ],
     
     "hyprland/window": {

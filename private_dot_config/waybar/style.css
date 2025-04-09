@@ -27,20 +27,21 @@ button:hover {
   box-shadow: inset 0 -3px @crust;
 }
 
+#workspaces label {
+  font-size: x-large;
+}
+
 #workspaces button {
-  font-size: 100pt;
   padding: 0 10px;
   background-color: transparent;
   color: @text;
 }
 
 #workspaces button.active {
-  font-size: 100pt;
   background: @surface1;
 }
 
 #workspaces button:hover {
-  font-size: 100pt;
   background: @mantle;
 }
 
@@ -101,8 +102,8 @@ button:hover {
 .modules-right,
 .modules-left,
 .modules-center {
-  background-color: @base;
   border-radius: 15px;
+  background-color: @base;
 }
 
 .modules-right {

@@ -52,5 +52,5 @@ echo ""                               >> $launch_script
 echo "if [[ \$1 == \"dc\" ]]; then"   >> $launch_script
 echo "    eval \"\$dc\" &"            >> $launch_script
 echo "elif [[ \$1 == \"ac\" ]]; then" >> $launch_script
-echo "    eval \"\$dc\" &"            >> $launch_script
+echo "    eval \"\$ac\" &"            >> $launch_script
 echo "fi"                             >> $launch_script

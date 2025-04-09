@@ -6,13 +6,13 @@ case $(hyprctl activeworkspace -j | jq -r '.id') in
     2) dc="firefox";ac="" ;;
     3) dc="discord";ac="" ;;
     4) dc="spotify";ac="" ;;
-    5) dc="code";ac="foot neovim" ;;
-    6) dc="foot lazygit";ac="" ;;
+    5) dc="code";ac="alacritty -e neovim" ;;
+    6) dc="alacritty -e lazygit";ac="" ;;
     7) dc="blender";ac="" ;;
     8) dc="godot";ac="" ;;
-    9) dc="foot";ac="" ;;
-    10) dc="foot yazi";ac="nemo" ;;
-    11) dc="foot btop";ac="" ;;
+    9) dc="alacritty";ac="" ;;
+    10) dc="alacritty -e yazi";ac="nemo" ;;
+    11) dc="alacritty -e btop";ac="" ;;
     12) dc="";ac="" ;;
     13) dc="";ac="" ;;
     14) dc="libreoffice";ac="" ;;
@@ -23,5 +23,5 @@ esac
 if [[ $1 == "dc" ]]; then
     eval "$dc" &
 elif [[ $1 == "ac" ]]; then
-    eval "$dc" &
+    eval "$ac" &
 fi

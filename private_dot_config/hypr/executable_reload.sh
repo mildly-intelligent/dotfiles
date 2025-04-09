@@ -2,9 +2,11 @@
 
 hyprctl reload
 
-pkill waybar; waybar
+pkill waybar; waybar &
 
 $HOME/.config/hypr/set-workspaces.sh
 
-pidof hyprpaper || hyprpaper
+pidof hyprpaper || hyprpaper &
 hyprctl hyprpaper reload ,"~/Pictures/Wallpapers/.png"
+
+pkill hypridle; hypridle &

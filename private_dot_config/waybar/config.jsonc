@@ -1,0 +1,30 @@
+{
+    "margin-top" : 5,
+    "margin-left": 10,
+    "margin-right": 10,
+    "height" : 30,
+    "include": [
+        "~/.config/waybar/left.jsonc",
+        "~/.config/waybar/center.jsonc",
+        "~/.config/waybar/right.jsonc",
+    ],
+
+    "modules-left": [
+        "group/power",
+        "hyprland/window",
+    ],
+
+    "modules-center": [
+        "hyprland/workspaces",
+        "tray",
+    ],
+
+    "modules-right": [
+        "cava",
+        "pulseaudio",
+        "network",
+        "battery",
+        "clock#date", "clock#time",
+        "custom/notification",
+    ],
+}

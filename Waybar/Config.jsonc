@@ -1,0 +1,39 @@
+{
+    "margin-top" : 5,
+    "margin-left": 10,
+    "margin-right": 10,
+    "height" : 15,
+    "include": [
+		"/home/aurora/Settings/Waybar/Modules/Left/power.jsonc",
+		"/home/aurora/Settings/Waybar/Modules/Left/window.jsonc",
+
+        "/home/aurora/Settings/Waybar/Modules/Center/tray.jsonc",
+		"/home/aurora/Settings/Waybar/Modules/Center/workspaces.jsonc",
+
+		"/home/aurora/Settings/Waybar/Modules/Right/battery.jsonc",
+		"/home/aurora/Settings/Waybar/Modules/Right/cava.jsonc",
+		"/home/aurora/Settings/Waybar/Modules/Right/clock.jsonc",
+		"/home/aurora/Settings/Waybar/Modules/Right/network.jsonc",
+		"/home/aurora/Settings/Waybar/Modules/Right/pulseaudio.jsonc",
+		"/home/aurora/Settings/Waybar/Modules/Right/language.jsonc",
+    ],
+
+    "modules-left": [
+        "group/power",
+        "hyprland/window",
+    ],
+
+    "modules-center": [
+        "hyprland/workspaces",
+        "tray",
+    ],
+
+    "modules-right": [
+        "cava",
+        "pulseaudio",
+        "network",
+        "battery",
+        "clock#date", "clock#time",
+		"custom/language"
+    ],
+}

@@ -1,0 +1,29 @@
+@import "/home/aurora/Settings/Waybar/Colors.css";
+
+
+
+* {
+  font-family: "Noto Sans Nerd Font", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  border-radius: 13px;
+}
+
+window#waybar {
+  background-color: transparent;
+  border-radius: 13px;
+  transition-property: background-color;
+  transition-duration: .5s;
+}
+
+
+.modules-right,
+.modules-left,
+.modules-center {
+  border-radius: 15px;
+  background-color: @base;
+}
+
+
+@import "/home/aurora/Settings/Waybar/Modules/Left/Style.css";
+@import "/home/aurora/Settings/Waybar/Modules/Center/Style.css";
+@import "/home/aurora/Settings/Waybar/Modules/Right/Style.css";

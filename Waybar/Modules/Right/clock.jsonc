@@ -1,0 +1,10 @@
+{
+  "clock#date": {
+    "format": "{:%b %d %Y}",
+    "tooltip": false
+  },
+  "clock#time": {
+    "format": "{:%I:%M %p}",
+    "tooltip": false
+  }
+}

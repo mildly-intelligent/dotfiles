@@ -1,0 +1,22 @@
+max-history=10
+sort=-time
+
+font=Noto Sans 10
+background-color=#1E1E2EFF
+text-color=#CDD6F4FF
+width=300
+height=100
+outer-margin=3
+margin=10
+padding=5
+border-size=2
+border-color=#CBA6F7FF
+border-radius=9
+icon-border-radius=3
+default-timeout=3000
+
+[urgency=critical]
+border-color=#F38BA8FF
+default-timeout=0
+layer=top
+anchor=center

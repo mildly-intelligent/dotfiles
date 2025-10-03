@@ -1,0 +1,58 @@
+{
+    "group/power": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 500,
+        },
+        "modules": [
+            "custom/power",
+            "custom/shutdown",
+            "custom/restart",
+            "custom/sleep",
+            // "custom/hibernate",
+            "custom/logout",
+            "custom/lock",
+        ],
+    },
+
+    "custom/power": {
+        "format": "",
+        "tooltip": false,
+    },
+
+    "custom/shutdown": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "/home/aurora/Settings/Scripts/power.sh --power",
+    },
+
+    "custom/restart": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "/home/aurora/Settings/Scripts/power.sh --reboot",
+    },
+
+    "custom/hibernate": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "/home/aurora/Settings/Scripts/power.sh --hibernate",
+    },
+
+    "custom/sleep": {
+        "format": "󰤄",
+        "tooltip": false,
+        "on-click": "/home/aurora/Settings/Scripts/power.sh --sleep",
+    },
+
+    "custom/logout": {
+        "format": "󰍃",
+        "tooltip": false,
+        "on-click": "/home/aurora/Settings/Scripts/power.sh --logout",
+    },
+
+    "custom/lock": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "/home/aurora/Settings/Scripts/power.sh --lock",
+    },
+}

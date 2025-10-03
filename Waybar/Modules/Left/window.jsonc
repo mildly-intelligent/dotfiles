@@ -1,0 +1,17 @@
+{
+    "hyprland/window": {
+        "format": "{}",
+        "max-length": 50,
+        "rewrite": {
+            "": "No Windows Open!",
+            "(.*) — Mozilla Firefox": "$1",
+            "(.*) - Discord": "$1",
+            "(.*) - Visual Studio Code": "$1",
+            "(.*) - Blender (\\d).(\\d).(\\d)": "$1",
+            "(.*) - Godot Engine": "$1",
+            "(.*) — LibreOffice Writer": "$1",
+            "(.*) - Mozilla Thunderbird": "$1",
+        },
+        "icon": true,
+    }
+}

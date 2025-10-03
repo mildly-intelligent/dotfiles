@@ -1,0 +1,9 @@
+{
+	"custom/language": {
+		"exec": "/home/aurora/Settings/Scripts/language.sh",
+		"format": "{text}",
+		"interval": 1,
+		"tooltip-format": "",
+		"on-click": "/home/aurora/Settings/Scripts/switch-language.sh",
+	}
+}

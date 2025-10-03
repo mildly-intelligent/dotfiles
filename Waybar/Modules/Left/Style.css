@@ -1,0 +1,53 @@
+@import "../../Colors.css";
+
+
+.modules-left {
+  padding-left: 0px;
+  padding: 0 20px;
+  padding-right: 10px;
+}
+
+
+/* ===Power Modules=== */
+#power {
+  margin-left: -20px;
+  padding: 0 10px;
+  padding-right: 14px;
+  border-radius: 15px;
+  background-color: @crust;
+}
+
+#custom-power {
+  font-size: large;
+  color: @maroon;
+}
+
+#custom-shutdown,
+#custom-restart,
+#custom-sleep,
+#custom-hibernate,
+#custom-logout,
+#custom-lock {
+  padding: 0 5px;
+}
+#custom-shutdown {
+  padding-left: 10px;
+  color: @red;
+}
+#custom-restart   { color: @yellow; }
+#custom-sleep     { color: @green;  }
+#custom-hibernate { color: @sky;    }
+#custom-logout    { color: @blue;   }
+#custom-lock {
+  padding-right: 2px;
+  color: @mauve;
+}
+
+
+/* ===Window Module=== */
+#window {
+  padding-left: 10px;
+  font-family: "Noto Sans Nerd Font", Noto Color Emoji, sans-serif;
+  background-color: @base;
+  color: @flamingo;
+}

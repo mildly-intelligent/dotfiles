@@ -1,0 +1,58 @@
+@import "../../Colors.css";
+
+
+.modules-center {
+  padding: 0 10px;
+}
+
+
+/* ===Workspaces Module=== */
+button {
+  /* Use box-shadow instead of border so the text isn't offset */
+  box-shadow: inset 0 -3px transparent;
+  /* Avoid rounded borders under each button name */
+  border: none;
+  border-radius: 0;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+  background: inherit;
+  box-shadow: inset 0 -3px @crust;
+}
+
+#workspaces label {
+  font-family: "Nerd Font Symbols";
+  font-size: x-large;
+  padding: 0 3px;
+}
+#workspaces:last-child {
+  padding-right: 7px;
+}
+
+#workspaces button {
+  padding: 0 10px;
+  padding-left: 2px;
+  background-color: transparent;
+  color: @text;
+}
+
+#workspaces button.active {
+  background: @surface1;
+}
+
+#workspaces button:hover {
+  background: @crust;
+}
+
+#workspaces button.urgent {
+  background-color: @maroon;
+}
+
+
+/* ===Tray Module=== */
+#tray {
+  padding-left: 10px;
+  border-radius: 0px;
+  border-left: 1px solid @surface2;
+}

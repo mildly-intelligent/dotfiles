@@ -13,7 +13,7 @@ border-size=2
 border-color=#CBA6F7FF
 border-radius=9
 icon-border-radius=3
-default-timeout=3000
+default-timeout=5000
 
 [urgency=critical]
 border-color=#F38BA8FF

@@ -17,7 +17,7 @@ paru -S --needed ark bluez bluez-utils brightnessctl btop catpuccin-gtk-theme-mo
 
 # === Hardlink settings files ===
 cd ~/.config/
-mkdir /hypr/ ./waybar/ ./wofi/ ./mako/ 
+mkdir -p ./hypr/ ./waybar/ ./wofi/ ./mako/ 
 cd ~/Settings/
 ln -f Hyprland/hyprland.conf ~/.config/hypr/hyprland.conf
 ln -f Hyprland/hypridle.conf ~/.config/hypr/hypridle.conf
@@ -27,4 +27,4 @@ ln -f Misc/xwayland-flags ~/.config/obsidian-flags.conf
 ln -f Misc/xwayland-flags ~/.config/spotify-flags.conf
 
 # === Change username ===
-find ~/Settings -type f -print0 | xargs -0 sed -i '' -e 's/aurora/$USER/g"
+find ~/Settings -type f -print0 | xargs -0 sed -i '' -e "s/aurora/$USER/g"

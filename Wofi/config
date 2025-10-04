@@ -6,7 +6,7 @@ prompt=Apps
 normal_window=true
 layer=top
 term=foot
-style=/home/aurora/.config/wofi/style.css
+style=/home/aurora/Settings/Wofi/style.css
 
 ## Geometry
 width=500px

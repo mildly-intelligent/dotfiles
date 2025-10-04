@@ -1,9 +1,9 @@
 #!/bin/bash
 
 hyprpaper &
-waybar &
+waybar --config /home/aurora/Waybar/Config.jsonc --style /home/aurora/Waybar/Style.css &
 hypridle &
-mako &
+mako --config /home/aurora/Misc/Mako &
 systemctl --user start hyprpolkitagent
 hyprctl setcursor dracula-cursor 22
 gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+
+cd ~
 # === Package installation ===
 
 # -- Install Paru if not already installed --

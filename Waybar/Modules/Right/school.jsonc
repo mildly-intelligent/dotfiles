@@ -1,0 +1,8 @@
+{
+	"custom/school": {
+		"exec": "/home/aurora/Settings/Scripts/language.sh",
+		"format": "{text}",
+		"interval": 60,
+		"tooltip": false
+	}
+}

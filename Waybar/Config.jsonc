@@ -16,6 +16,7 @@
 		"/home/aurora/Settings/Waybar/Modules/Right/network.jsonc",
 		"/home/aurora/Settings/Waybar/Modules/Right/pulseaudio.jsonc",
 		"/home/aurora/Settings/Waybar/Modules/Right/language.jsonc",
+        "/home/aurora/Settings/Waybar/Modules/Right/school.jsonc",
     ],
 
     "modules-left": [
@@ -34,6 +35,7 @@
         "network",
         "battery",
         "clock#date", "clock#time",
-		"custom/language"
+		"custom/language",
+        "custom/school",
     ],
 }

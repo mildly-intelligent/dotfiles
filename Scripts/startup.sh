@@ -1,7 +1,7 @@
 #!/bin/bash
 
 hyprpaper &
-waybar --config /home/aurora/Waybar/Config.jsonc --style /home/aurora/Waybar/Style.css &
+waybar --config /home/aurora/Settings/Waybar/Config.jsonc --style /home/aurora/Settings/Waybar/Style.css &
 hypridle &
 mako --config /home/aurora/Misc/Mako &
 systemctl --user start hyprpolkitagent

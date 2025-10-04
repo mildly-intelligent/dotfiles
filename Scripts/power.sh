@@ -10,7 +10,7 @@ Flags:
 	-p	--power		Shuts down the computer.
 	-r	--reboot	Reboots the computer.
 	-s	--sleep		Suspends the computer's state to RAM.
-	-h	--hibernate	Suspends the computer's state to swap space.
+	-h	--hibernate	Suspends the computer's state to swap space. (Deprecated)
 	-l	--logout	Exits Hyprland.
 	-k	--lock		Opens the lock screen.
 EOF

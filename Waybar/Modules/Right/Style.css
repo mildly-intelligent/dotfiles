@@ -12,7 +12,8 @@
 #network,
 #battery,
 #clock,
-#custom-language {
+#custom-language,
+#custom-school {
   padding: 0 5px;
 }
 
@@ -44,6 +45,10 @@
 
 #custom-language {
   color: @mauve;
+}
+
+#custom-school {
+  color: @pink;
 }
 
 

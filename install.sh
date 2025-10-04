@@ -22,3 +22,6 @@ ln Misc/xwayland-flags ~/.config/code-flags.conf
 ln Misc/xwayland-flags ~/.config/discord-flags.conf
 ln Misc/xwayland-flags ~/.config/obsidian-flags.conf
 ln Misc/xwayland-flags ~/.config/spotify-flags.conf
+
+# === Change username ===
+find ~/Settings -type f -print0 | xargs -0 sed -i '' -e 's/aurora/$USER/g"

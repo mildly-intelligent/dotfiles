@@ -13,7 +13,7 @@ if ! paru -V; then
 fi
 
 # -- So many packages --
-paru -S ark bluez bluez-utils brightnessctl btop catpuccin-gtk-theme-mocha cava fastfetch fcitx5 fcitx-chinese-addons fish gnome-bluetooth grim hyprcursor-dracula-kde-git hypridle hyprland hyprlock hyprpaper hyprpolkitagent hyprsunset kitty libinput-gestures ly mako nemo nautilus noto-fonts-cjk noto-fonts-emoji oh-my-posh-bin papirus-icon-theme slurp ttf-hack-nerd wl-clipboard waybar-cava wofi
+paru -S --needed ark bluez bluez-utils brightnessctl btop catpuccin-gtk-theme-mocha cava fastfetch fcitx5 fcitx-chinese-addons fish gnome-bluetooth grim hyprcursor-dracula-kde-git hypridle hyprland hyprlock hyprpaper hyprpolkitagent hyprsunset kitty libinput-gestures ly mako nemo nautilus noto-fonts-cjk noto-fonts-emoji oh-my-posh-bin papirus-icon-theme slurp ttf-hack-nerd wl-clipboard waybar-cava wofi
 
 # === Hardlink settings files ===
 cd ~/.config/

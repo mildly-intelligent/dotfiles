@@ -3,11 +3,12 @@
 # === Package installation ===
 
 # -- Install Paru if not already installed --
-paru -V ||
-sudo pacman -S --needed base-devel &&
-git clone https://aur.archlinux.org/paru.git &&
-cd ./paru &&
-makepkg -si
+if ! paru -V; then
+	sudo pacman -S --needed base-devel
+	git clone https://aur.archlinux.org/paru.git
+	cd ./paru
+	makepkg -si
+fi
 
 # -- So many packages --
 paru -S ark bluez bluez-utils brightnessctl btop catpuccin-gtk-theme-mocha cava fastfetch fcitx5 fcitx-chinese-addons fish gnome-bluetooth grim hyprcursor-dracula-kde-git hypridle hyprland hyprlock hyprpaper hyprpolkitagent hyprsunset kitty libinput-gestures ly mako nemo nautilus noto-fonts-cjk noto-fonts-emoji oh-my-posh-bin papirus-icon-theme slurp ttf-hack-nerd wl-clipboard waybar-cava wofi

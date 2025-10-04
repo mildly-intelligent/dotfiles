@@ -17,6 +17,7 @@ paru -S --needed ark bluez bluez-utils brightnessctl btop catpuccin-gtk-theme-mo
 
 # === Hardlink settings files ===
 cd ~/.config/
+rm -rf ./hypr/ ./waybar/ ./wofi/ ./mako/ 2>/dev/null
 mkdir -p ./hypr/ ./waybar/ ./wofi/ ./mako/ 
 cd ~/Settings/
 ln -f Hyprland/hyprland.conf ~/.config/hypr/hyprland.conf

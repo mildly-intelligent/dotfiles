@@ -4,18 +4,18 @@
     "margin-right": 10,
     "height" : 15,
     "include": [
-		"/home/aurora/Settings/Waybar/Modules/Left/power.jsonc",
-		"/home/aurora/Settings/Waybar/Modules/Left/window.jsonc",
+		"/home/mildly-intelligent/Settings/Waybar/Modules/Left/power.jsonc",
+		"/home/mildly-intelligent/Settings/Waybar/Modules/Left/window.jsonc",
 
-        "/home/aurora/Settings/Waybar/Modules/Center/tray.jsonc",
-		"/home/aurora/Settings/Waybar/Modules/Center/workspaces.jsonc",
+        "/home/mildly-intelligent/Settings/Waybar/Modules/Center/tray.jsonc",
+		"/home/mildly-intelligent/Settings/Waybar/Modules/Center/workspaces.jsonc",
 
-		"/home/aurora/Settings/Waybar/Modules/Right/battery.jsonc",
-		"/home/aurora/Settings/Waybar/Modules/Right/cava.jsonc",
-		"/home/aurora/Settings/Waybar/Modules/Right/clock.jsonc",
-		"/home/aurora/Settings/Waybar/Modules/Right/network.jsonc",
-		"/home/aurora/Settings/Waybar/Modules/Right/pulseaudio.jsonc",
-		"/home/aurora/Settings/Waybar/Modules/Right/language.jsonc",
+		"/home/mildly-intelligent/Settings/Waybar/Modules/Right/battery.jsonc",
+		"/home/mildly-intelligent/Settings/Waybar/Modules/Right/cava.jsonc",
+		"/home/mildly-intelligent/Settings/Waybar/Modules/Right/clock.jsonc",
+		"/home/mildly-intelligent/Settings/Waybar/Modules/Right/network.jsonc",
+		"/home/mildly-intelligent/Settings/Waybar/Modules/Right/pulseaudio.jsonc",
+		"/home/mildly-intelligent/Settings/Waybar/Modules/Right/language.jsonc",
     ],
 
     "modules-left": [

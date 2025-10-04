@@ -1,4 +1,4 @@
-gesture	hold	on	3	wofi --conf /home/aurora/Settings/Wofi/config
+gesture	hold	on	3	wofi --conf /home/mildly-intelligent/Settings/Wofi/config
 gesture	hold	on	4	playerctl play-pause
 gesture	swipe	right	4	playerctl previous
 # next song:

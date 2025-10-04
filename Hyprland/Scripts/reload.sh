@@ -3,7 +3,7 @@
 hyprctl reload
 
 pkill waybar
-waybar --config /home/aurora/Settings/Waybar/Config.jsonc --style /home/aurora/Settings/Waybar/Style.css &
+waybar --config /home/mildly-intelligent/Settings/Waybar/Config.jsonc --style /home/mildly-intelligent/Settings/Waybar/Style.css &
 
 rm ~/Pictures/Wallpapers/.png 2>/dev/null
 ln -s ~/Pictures/Wallpapers/*. ~/Pictures/Wallpapers/.png

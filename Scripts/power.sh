@@ -33,7 +33,7 @@ EOF
 	;;
 '-l' | '--logout')
 	echo Logging out!
-	~/Settings/Hyprland/Scripts/exit.sh
+	/home/aurora/Settings/Scripts/exit.sh
 	hyprctl dispatch exit
 	;;
 '-k' | '--lock')

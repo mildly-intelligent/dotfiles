@@ -144,3 +144,21 @@ This notification is located in the center of the screen.
 This notification is located in the center of the screen.
 
 ![Notification saying "BATTERY CRITICAL"](./Examples-critical-notification.png)
+
+# TODO
+
+## README
+
+* Add changelog.
+* Update waybar images.
+
+## Hyprland
+
+* Find a way to reopen just closed windows.
+
+## Waybar
+
+* Finish writing the school schedule.
+* Add style sheet for tooltips.
+* Find a way to add image tooltips for workspaces.
+* Find something to fill the space on the left module group.

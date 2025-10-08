@@ -131,19 +131,19 @@ This is a script that will run on loop and send a notification when the battery 
 
 This notification is located in the top right of the screen along side other non-battery related notifications.
 
-![Notification saying "BATTERY LOW"](./Examples/low-notification.png)
+![Notification saying "BATTERY LOW"](./Examples/battery-low-notification.png)
 
 ### Very Low
 
 This notification is located in the center of the screen.
 
-![Notification saying "BATTERY VERY LOW"](./Examples/very-low-notification.png)
+![Notification saying "BATTERY VERY LOW"](./Examples/battery-very-low-notification.png)
 
 ### Critical
 
 This notification is located in the center of the screen.
 
-![Notification saying "BATTERY CRITICAL"](./Examples/critical-notification.png)
+![Notification saying "BATTERY CRITICAL"](./Examples/battery-critical-notification.png)
 
 # TODO
 

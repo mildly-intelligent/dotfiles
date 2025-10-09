@@ -116,6 +116,9 @@ Shows the date and time.
 #### Keyboard
 Shows the keyboard being used by Fcixt5, for me either ENG or 中文.
 
+#### School
+Shows the current period in school, upon hover it shows what the period is and how much time is left.
+
 
 ## Wofi
 
@@ -159,6 +162,5 @@ This notification is located in the center of the screen.
 ## Waybar
 
 * Finish writing the school schedule.
-* Add style sheet for tooltips.
 * Find a way to add image tooltips for workspaces.
 * Find something to fill the space on the left module group.

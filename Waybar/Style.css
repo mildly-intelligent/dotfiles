@@ -1,7 +1,6 @@
 @import "/home/aurora/Settings/Waybar/Colors.css";
 
 
-
 * {
   font-family: "Noto Sans Nerd Font", Roboto, Helvetica, Arial, sans-serif;
   font-size: 12px;
@@ -13,6 +12,16 @@ window#waybar {
   border-radius: 13px;
   transition-property: background-color;
   transition-duration: .5s;
+}
+
+tooltip {
+  background: @base;
+  border: 1px solid @mauve;
+  border-radius: 5px;
+}
+tooltip label {
+  padding: 1px;
+  color: @text;
 }
 
 

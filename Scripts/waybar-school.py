@@ -36,7 +36,7 @@ remainingTime = (nextBlockStart - now).seconds
 hours = remainingTime // 3600
 hoursFormatted = f"{hours} hours " if hours > 1 else "1 hour " if hours == 1 else ""
 minutes = round((remainingTime - (hours*3600)) / 60)
-minutesFormatted = f"{minutes} minutes " if minutes > 1 else "1 minute" if minutes == 1 else ""
+minutesFormatted = f"{minutes} minutes " if minutes > 1 else "1 minute " if minutes == 1 else "zero minutes "
 
 
 block:str = schedule["blocks"][currentBlock]
@@ -48,7 +48,7 @@ blockNameP2 = block.split(" | ")[-1]
 
 output = {
 	"text": blockNameP1,
-	"tooltip": f"{blockNameP2 if blockNameP1 != blockNameP2 else ""}\n{hoursFormatted}{"and " if (hours>=1) and (minutes>=1) else ""}{minutesFormatted}remaining"
+	"tooltip": f"{f"{blockNameP2}\n" if blockNameP1 != blockNameP2 else ""}{hoursFormatted}{"and " if (hours>=1) and (minutes>=1) else ""}{minutesFormatted}remaining"
 }
 
 print(json.dumps(output))

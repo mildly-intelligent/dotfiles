@@ -164,3 +164,7 @@ This notification is located in the center of the screen.
 * Finish writing the school schedule.
 * Find a way to add image tooltips for workspaces.
 * Find something to fill the space on the left module group.
+
+## Ewww
+
+* Learn how to do that

@@ -14,13 +14,13 @@ now = datetime.now()
 
 dayOfWeek = date.weekday(now)+1
 timestamp = now.hour*60 + now.minute	# Key for the block schedule
-datestamp = now.strftime("%j")			# Key for the year schedule
+datestamp = int(now.strftime("%j"))			# Key for the year schedule
 
 
-if str(datestamp) in schedule["blockSchedule"]:
+if schedule["blockSchedule"][datestamp-288] != "":
 	blocks:dict = schedule["daily"][str(dayOfWeek)]
 else:
-	print("No School Today!")
+	print("{ \"text\": \"No School Today!\" }")
 	exit()
 
 
@@ -29,7 +29,7 @@ for i in range(len(times)-1):
 	if between(timestamp, int(times[i]), int(times[i+1])):
 		currentBlock = blocks[str(times[i])]
 		if currentBlock in ("1","2","3"):
-			currentBlock = schedule["blockSchedule"][datestamp][int(currentBlock)-1]
+			currentBlock = schedule["blockSchedule"][datestamp-288][int(currentBlock)-1]
 		nextBlockStart = datetime(now.year, now.month, now.day, int(times[i+1]) // 60, int(times[i+1]) % 60)
 
 remainingTime = (nextBlockStart - now).seconds

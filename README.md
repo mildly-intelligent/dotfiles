@@ -153,7 +153,6 @@ This notification is located in the center of the screen.
 ## README
 
 * Add changelog.
-* Update waybar images.
 
 ## Hyprland
 
@@ -165,6 +164,8 @@ This notification is located in the center of the screen.
 * Find a way to add image tooltips for workspaces.
 * Find something to fill the space on the left module group.
 
-## Ewww
+## Eww
 
-* Learn how to do that
+* Learn how to use eww
+* Add widget for display settings (extend, mirror, etc)
+* Possible HUD menu on desktop

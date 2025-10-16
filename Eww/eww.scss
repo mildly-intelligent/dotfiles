@@ -1,0 +1,41 @@
+@import "./colors.scss";
+
+
+* {
+	all: unset
+}
+
+window {
+	background-color: $base;
+	border-radius: 30px;
+}
+
+// #region Date
+.date {
+	font-family: "Source Han Serif CN", serif;
+	font-weight: bolder;
+}
+
+.date > .dow {
+	color: desaturate($color: $red, $amount: 50);
+	font-style: italic;
+	font-weight: normal;
+	font-size: medium;
+	margin: -10 0 -20 0px;
+}
+.date > .day {
+	color: $red;
+	font-size: xx-large;
+}
+.date > .month {
+	color: $red;
+	font-size: xx-large;
+}
+.date > .year {
+	color: $red;
+	font-weight: normal;
+	font-size: small;
+	margin: -20 0 -10 0px;
+}
+
+// #endregion

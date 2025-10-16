@@ -1,0 +1,36 @@
+; === Chinese date ===
+(defpoll dow-zh :interval "24h" :run-while lang=="zh"
+	`echo 星期$(spellout -l zh $(date +%w))`)
+(defpoll day-zh :interval "24h" :run-while lang=="zh"
+	`echo $(spellout -l zh $(date +%d))号 | sed 's/./& /g' | sed 's/\\s*$//'`)
+(defpoll month-zh :interval "24h" :run-while lang=="zh"
+	`echo $(spellout -l zh $(date +%m))月 | sed 's/./&   /g' | sed 's/\\s*$//'`)
+(defpoll year-zh :interval "24h" :run-while lang=="zh"
+	`echo $(date +%Y | sed 'y/0123456789/零一二三四五六七八九/')年`)
+
+; === English date ===
+(defpoll dow-en :interval "24h" :run-while lang=="en"
+	`date +%A`)
+(defpoll day-en :interval "24h" :run-while lang=="en"
+	`date +%d`)
+(defpoll month-en :interval "24h" :run-while lang=="en"
+	`date +%B`)
+(defpoll year-en :interval "24h" :run-while lang=="en"
+	`date +%Y | sed 's/./&   /g' | sed 's/\\s*$//'`)
+
+(defwidget date [lang]
+	(box :class "date" :orientation "v"
+		(label :class "dow" :text {lang == "zh" ? dow-zh : dow-en})
+		(label :class "month" :text {lang == "zh" ? month-zh : month-en})
+		(label :class "day" :text {lang == "zh" ? day-zh : day-en})
+		(label :class "year" :text {lang == "zh" ? year-zh : year-en})))
+
+(defwindow date
+	:monitor 0
+	:geometry (geometry :x 10
+						:y 10
+						:width 150
+						:height 150
+						:align "top-left")
+	:stacking "fg"
+	(date :lang "zh"))

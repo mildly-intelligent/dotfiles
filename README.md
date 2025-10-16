@@ -163,12 +163,18 @@ This notification is located in the center of the screen.
 * Finish writing the school schedule.
 * Find a way to add image tooltips for workspaces.
 * Find something to fill the space on the left module group.
+* Maybe rework into Eww
 
 ## Eww
 
-* Learn how to use eww
 * Add widget for display settings (extend, mirror, etc)
-* Possible HUD menu on desktop
+* HUD menu on desktop
+	* [x] Date
+	* [ ] Time
+	* [ ] Volume
+	* [ ] Bluetooth volume
+	* [ ] Player
+	* [ ] Notifications
 
 # Things to look into
 

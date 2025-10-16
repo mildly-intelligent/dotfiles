@@ -169,3 +169,11 @@ This notification is located in the center of the screen.
 * Learn how to use eww
 * Add widget for display settings (extend, mirror, etc)
 * Possible HUD menu on desktop
+
+# Things to look into
+
+* [https://github.com/JamDon2/hyprquickshot/]
+
+# Inspiration
+
+[https://github.com/nautilor/nord-eww]

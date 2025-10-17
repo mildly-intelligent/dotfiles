@@ -170,16 +170,20 @@ This notification is located in the center of the screen.
 * Add widget for display settings (extend, mirror, etc)
 * HUD menu on desktop
 	* [x] Date
-	* [ ] Time
+	* [x] Time
 	* [ ] Volume
 	* [ ] Bluetooth volume
 	* [ ] Player
 	* [ ] Notifications
+	* [ ] Calender
+	* [ ] Power controls
 
-# Things to look into
+# Github repos
+
+## Inspo
+
+* [https://github.com/nautilor/nord-eww]
+
+## Things to look into
 
 * [https://github.com/JamDon2/hyprquickshot/]
-
-# Inspiration
-
-[https://github.com/nautilor/nord-eww]

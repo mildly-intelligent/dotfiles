@@ -25,13 +25,17 @@ $date: $red;
 	font-size: medium;
 	margin: -10 0 -20 0px;
 }
-.date > .day .month {
+.date > .day {
+	font-size: xx-large;
+}
+.date > .month {
 	font-size: xx-large;
 }
 .date > .year {
 	font-weight: normal;
 	font-size: small;
 	margin: -20 0 -10 0px;
+	// tab-size: 10px;
 }
 
 // #endregion
@@ -42,6 +46,7 @@ $time: $peach;
 .bg {
 	border-radius: 30px;
 	background-color: black;
+	opacity: 0.7;
 }
 .time {
 	color: $time;
@@ -60,5 +65,14 @@ $time: $peach;
 }
 .time > .main > .minute {
 	margin-top: -25px;
+}
+// #endregion
+
+// #region power buttons
+.shutdown1,
+.shutdown2,
+.shutdown3,
+.shutdown4 {
+	border-radius: 20px;
 }
 // #endregion

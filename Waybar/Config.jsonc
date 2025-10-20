@@ -30,7 +30,7 @@
     ],
 
     "modules-right": [
-        "cava",
+        // "cava",
         "pulseaudio",
         "network",
         "battery",

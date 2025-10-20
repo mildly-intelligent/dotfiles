@@ -1,0 +1,52 @@
+(defwidget power_button [symbol script]
+	(button :onclick script
+		(image :path "../Assets/${symbol}"
+			   :height "32px")))
+
+(defwindow shutdown1
+	:monitor 0
+	:geometry (geometry :x 10
+						:y 10
+						:width 70
+						:height 70
+						:align "top-left")
+	:stacking "fg"
+	(power_button :class "power"
+				  :symbol "shutdown.svg"
+				  :script "notify-send power\ shutdown"))
+
+(defwindow shutdown2
+	:monitor 0
+	:geometry (geometry :x 10
+						:y 90
+						:width 70
+						:height 70
+						:align "top-left")
+	:stacking "fg"
+	(power_button :class "power"
+				  :symbol "system-log-out-symbolic"
+				  :script "notify-send power\ logout"))
+
+(defwindow shutdown3
+	:monitor 0
+	:geometry (geometry :x 90
+						:y 10
+						:width 70
+						:height 70
+						:align "top-left")
+	:stacking "fg"
+	(power_button :class "power"
+				  :symbol "system-suspend-symbolic"
+				  :script "notify-send power\ suspend"))
+
+(defwindow shutdown4
+	:monitor 0
+	:geometry (geometry :x 90
+						:y 90
+						:width 70
+						:height 70
+						:align "top-left")
+	:stacking "fg"
+	(power_button :class "power"
+				  :symbol "system-reboot-symbolic"
+				  :script "notify-send power\ reboot"))

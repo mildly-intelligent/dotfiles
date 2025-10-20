@@ -28,27 +28,27 @@ $sky-21: linear-gradient(to bottom, #010A10 30%,#59230B 80%,#2F1107 100%);
 $sky-22: linear-gradient(to bottom, #090401 50%,#4B1D06 100%);
 $sky-23: linear-gradient(to bottom, #00000c 80%,#150800 100%);
 
-.hour-00 {background-image: $sky-00; opacity: 0.7}
-.hour-01 {background-image: $sky-01; opacity: 0.7}
-.hour-02 {background-image: $sky-02; opacity: 0.7}
-.hour-03 {background-image: $sky-03; opacity: 0.7}
-.hour-04 {background-image: $sky-04; opacity: 0.7}
-.hour-05 {background-image: $sky-05; opacity: 0.7}
-.hour-06 {background-image: $sky-06; opacity: 0.7}
-.hour-07 {background-image: $sky-07; opacity: 0.7}
-.hour-08 {background-image: $sky-08; opacity: 0.7}
-.hour-09 {background-image: $sky-09; opacity: 0.7}
-.hour-10 {background-image: $sky-10; opacity: 0.7}
-.hour-11 {background-image: $sky-11; opacity: 0.7}
-.hour-12 {background-image: $sky-12; opacity: 0.7}
-.hour-13 {background-image: $sky-13; opacity: 0.7}
-.hour-14 {background-image: $sky-14; opacity: 0.7}
-.hour-15 {background-image: $sky-15; opacity: 0.7}
-.hour-16 {background-image: $sky-16; opacity: 0.7}
-.hour-17 {background-image: $sky-17; opacity: 0.7}
-.hour-18 {background-image: $sky-18; opacity: 0.7}
-.hour-19 {background-image: $sky-19; opacity: 0.7}
-.hour-20 {background-image: $sky-20; opacity: 0.7}
-.hour-21 {background-image: $sky-21; opacity: 0.7}
-.hour-22 {background-image: $sky-22; opacity: 0.7}
-.hour-23 {background-image: $sky-23; opacity: 0.7}
+.bg.hour-00 {background-image: $sky-00;}
+.bg.hour-01 {background-image: $sky-01;}
+.bg.hour-02 {background-image: $sky-02;}
+.bg.hour-03 {background-image: $sky-03;}
+.bg.hour-04 {background-image: $sky-04;}
+.bg.hour-05 {background-image: $sky-05;}
+.bg.hour-06 {background-image: $sky-06;}
+.bg.hour-07 {background-image: $sky-07;}
+.bg.hour-08 {background-image: $sky-08;}
+.bg.hour-09 {background-image: $sky-09;}
+.bg.hour-10 {background-image: $sky-10;}
+.bg.hour-11 {background-image: $sky-11;}
+.bg.hour-12 {background-image: $sky-12;}
+.bg.hour-13 {background-image: $sky-13;}
+.bg.hour-14 {background-image: $sky-14;}
+.bg.hour-15 {background-image: $sky-15;}
+.bg.hour-16 {background-image: $sky-16;}
+.bg.hour-17 {background-image: $sky-17;}
+.bg.hour-18 {background-image: $sky-18;}
+.bg.hour-19 {background-image: $sky-19;}
+.bg.hour-20 {background-image: $sky-20;}
+.bg.hour-21 {background-image: $sky-21;}
+.bg.hour-22 {background-image: $sky-22;}
+.bg.hour-23 {background-image: $sky-23;}

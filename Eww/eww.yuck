@@ -1,2 +1,3 @@
 (include "./Widgets/date.yuck")
 (include "./Widgets/time.yuck")
+(include "./Widgets/power.yuck")

@@ -20,7 +20,7 @@ datestamp = int(now.strftime("%j"))			# Key for the year schedule
 if schedule["blockSchedule"][datestamp-288] != "":
 	blocks:dict = schedule["daily"][str(dayOfWeek)]
 else:
-	print("{ \"text\": \"No School Today!\" }")
+	print("\{\}")
 	exit()
 
 

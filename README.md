@@ -150,6 +150,10 @@ This notification is located in the center of the screen.
 
 # TODO
 
+## Hyprland
+
+* Noise button. (meta+shift+p)
+
 ## README
 
 * Add changelog.
@@ -187,3 +191,5 @@ This notification is located in the center of the screen.
 ## Things to look into
 
 * [https://github.com/JamDon2/hyprquickshot/]
+
+* [https://archlinux.org/packages/extra/x86_64/swww/]

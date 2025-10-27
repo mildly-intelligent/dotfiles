@@ -2,8 +2,8 @@
 
 lang="$(fcitx5-remote -n)"
 
-if [[ "$lang" = "keyboard-us" ]]; then
-	echo ENG
-else
+if [[ "$lang" = "pinyin" ]]; then
 	echo 中文
+else
+	echo ENG
 fi

@@ -69,10 +69,23 @@ $time: $peach;
 // #endregion
 
 // #region power buttons
-.shutdown1,
-.shutdown2,
-.shutdown3,
-.shutdown4 {
+.shutdown,
+.logout,
+.reboot,
+.suspend {
 	border-radius: 20px;
+	color: $blue;
+}
+.shutdown {
+	color: $maroon;
+}
+.logout {
+	color: $green;
+}
+.reboot {
+	color: $peach;
+}
+.suspend {
+	color: $mauve;
 }
 // #endregion

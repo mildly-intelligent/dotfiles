@@ -1,6 +1,6 @@
 #!/bin/bash
 
-hyprpaper &
+swww-daemon &
 waybar --config /home/aurora/Settings/Waybar/Config.jsonc --style /home/aurora/Settings/Waybar/Style.css &
 hypridle &
 mako --config /home/aurora/Misc/Mako &

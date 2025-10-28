@@ -10,5 +10,6 @@ gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
 libinput-gestures-setup autostart start
 fcixt5 -d &
 nm-applet &
-/home/aurora/Settings/Scripts/battery-warning.sh
-/home/aurora/Settings/Scripts/hyprland-event-watcher.sh
+/home/aurora/Settings/Scripts/battery-warning.sh &
+/home/aurora/Settings/Scripts/hyprland-event-watcher.sh &
+

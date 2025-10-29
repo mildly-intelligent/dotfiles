@@ -17,6 +17,7 @@ bash ./install.sh
 * <kbd>Meta</kbd>+<kbd>⇧ Shift</kbd>+<kbd>C</kbd> - Reload Hyprland
 * <kbd>PrtSc</kbd> - Take screenshot
 * <kbd>CapsLock</kbd><sup>†</sup> - Switch keyboard via fcitx5
+* <kbd>Meta</kbd>+<kbd>⇧ Shift</kbd>+<kbd>P</kbd> - Metal pipe
 
 #### Window Control
 * <kbd>Meta</kbd>+<kbd>⇧ Shift</kbd>+<kbd>Q</kbd> - Close active window
@@ -34,7 +35,7 @@ bash ./install.sh
 * <kbd>Meta</kbd>+<kbd>D</kbd> - Open Discord
 * <kbd>Meta</kbd>+<kbd>F</kbd> - Open files (Nemo)
 * <kbd>Meta</kbd>+<kbd>S</kbd> - Open Spotify
-* <kbd>Meta</kbd>+<kbd>T</kbd> - Open the terminal (Kitty)
+* <kbd>Meta</kbd>+<kbd>T</kbd> - Open terminal (Kitty)
 
 #### Workspace Switching
 * <kbd>Meta</kbd>+<kbd>F1-12</kbd> - Switch to workspace #
@@ -148,41 +149,36 @@ This notification is located in the center of the screen.
 
 ![Notification saying "BATTERY CRITICAL"](./Examples/battery-critical-notification.png)
 
-# TODO
+# Roadmap
 
-## Hyprland
+## TODO
 
-* Noise button. (meta+shift+p)
+### Eww
+* [ ] Finish power widgets.
+* [ ] Notifications pane.
+* [ ] Music widget.
+* [ ] Battery widget.
+* [ ] Current class.
+* [ ] Arrange widgets.
+* [ ] Display widgets on blank workspace.
 
-## README
+## Done
 
-* Add changelog.
+### Eww
+* [x] Date widget.
+* [x] Time widget.
 
-## Hyprland
+## IDEAS
 
-* Find a way to reopen just closed windows.
+* Gesture to reopen recently closed windows.
+* Rework waybar into Eww.
 
-## Waybar
 
-* Finish writing the school schedule.
-* Find a way to add image tooltips for workspaces.
-* Find something to fill the space on the left module group.
-* Maybe rework into Eww
+# Useful links
 
-## Eww
+## Documentations:
 
-* Add widget for display settings (extend, mirror, etc)
-* HUD menu on desktop
-	* [x] Date
-	* [x] Time
-	* [ ] Volume
-	* [ ] Bluetooth volume
-	* [ ] Player
-	* [ ] Notifications
-	* [ ] Calender
-	* [ ] Power controls
 
-# Github repos
 
 ## Inspo
 

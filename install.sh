@@ -20,6 +20,7 @@ cd ~/.config/
 rm -rf ./hypr/ ./waybar/ ./wofi/ ./mako/ 2>/dev/null
 mkdir -p ./hypr/ ./waybar/ ./wofi/ ./mako/ 
 cd ~/Settings/
+ln -sf ~/.local/share/nemo/actions/ ~/Settings/Nemo_Actions
 ln -f Hyprland/hyprland.conf ~/.config/hypr/hyprland.conf
 ln -f Hyprland/hypridle.conf ~/.config/hypr/hypridle.conf
 ln -f Misc/xwayland-flags ~/.config/code-flags.conf

@@ -1,9 +1,14 @@
 #!/bin/bash
 
-fcitx5-remote -t
+lang="$(fcitx5-remote -n)"
 
-if [ "$(fcitx5-remote -n)" = "keyboard (us)" ]; then
-	export LANG=en_US.UTF-8
-elif [ "$(fcitx5-remote -n)" = "pinyin" ]; then
-	export LANG=zh_CH.UTF-8
+if [ "$lang" = "keyboard-us" ]; then
+	notify-send "Input method changed!" "Keyboard is now set to Pinyin input method."
+	fcitx5-remote -s "pinyin"
+elif [ "$lang" = "pinyin" ]; then
+	notify-send "Input method changed!" "Keyboard is now set to Wubi input method."
+	fcitx5-remote -s "wbx"
+elif [ "$lang" = "wbx" ]; then
+	notify-send "Input method chnaged!" "Keyboard is now set to English (US) input method."
+	fcitx5-remote -s "keyboard-us"
 fi

@@ -8,6 +8,7 @@ mako --config /home/aurora/Misc/Mako &
 systemctl --user start hyprpolkitagent
 hyprctl setcursor dracula-cursor 22
 gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
+gsettings set org.gnome.desktop.interface gtk-theme "catppuccin-mocha-mauve-standard+default"
 libinput-gestures-setup autostart start
 fcixt5 -d &
 nm-applet &
@@ -23,11 +24,3 @@ echo "# Saved enviornment variables for use in root scoped scripts, to use do \`
 echo "export $(env | grep -e ^DISPLAY=)" >> $envFile
 echo "export $(env | grep -e ^HYPRLAND_INSTANCE_SIGNATURE=)" >> $envFile
 echo "export $(env | grep -e ^DBUS_SESSION_BUS_ADDRESS=)" >> $envFile
-
-
-
-export NO_AT_BRIDGE=1
-eval $(dbus-launch --sh-syntax)
-export DBUS_SESSION_BUS_ADDRESS
-export DBUS_SESSION_BUS_PID
-export DBUS_SESSION_BUS_WINDOWID

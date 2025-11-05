@@ -1,5 +1,6 @@
 #!/bin/bash
 
+crond &
 swww-daemon &
 waybar --config /home/aurora/Settings/Waybar/Config.jsonc --style /home/aurora/Settings/Waybar/Style.css &
 hypridle &

@@ -1,4 +1,5 @@
 #!/bin/bash
+source /home/aurora/Settings/Misc/env
 
 event=$1
 warningNo=$2

@@ -149,6 +149,14 @@ This notification is located in the center of the screen.
 
 ![Notification saying "BATTERY CRITICAL"](./Examples/battery-critical-notification.png)
 
+## Eww
+
+### Volume Slider
+
+Will slide up from the bottom of the screen wen changing volume.
+
+![Volume slider appearing and changing volume](./Examples/eww_volume-slider.gif)
+
 # Roadmap
 
 ## TODO
@@ -168,6 +176,9 @@ This notification is located in the center of the screen.
 * [x] Date widget.
 * [x] Time widget.
 
+### Hyprland
+* [x] Hyprland native notifications instead of mako for system notifications
+
 ## IDEAS
 
 * Gesture to reopen recently closed windows.
@@ -178,14 +189,12 @@ This notification is located in the center of the screen.
 
 ## Documentations:
 
-
+* [Eww documentation](https://elkowar.github.io/eww/eww.html)
 
 ## Inspo
 
-* [https://github.com/nautilor/nord-eww]
+* [Eww config](https://github.com/nautilor/nord-eww)
 
 ## Things to look into
 
-* [https://github.com/JamDon2/hyprquickshot/]
-
-* [https://archlinux.org/packages/extra/x86_64/swww/]
+* [hyprquickshot](https://github.com/JamDon2/hyprquickshot/)

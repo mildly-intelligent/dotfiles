@@ -25,3 +25,4 @@ echo "# Saved enviornment variables for use in root scoped scripts, to use do \`
 echo "export $(env | grep -e ^DISPLAY=)" >> $envFile
 echo "export $(env | grep -e ^HYPRLAND_INSTANCE_SIGNATURE=)" >> $envFile
 echo "export $(env | grep -e ^DBUS_SESSION_BUS_ADDRESS=)" >> $envFile
+

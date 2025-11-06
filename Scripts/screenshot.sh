@@ -2,6 +2,14 @@
 
 filepath="$HOME/Pictures/Screenshots/$(date +%Y%m%d-%H%M%S).png"
 
-grim -cg "$(slurp -dw 2 -b cdd6f475 -c 00000000)" "$filepath" &&
-	wl-copy --type image/png <"$filepath" &&
-	notify-send Screenshot "Screenshot taken!"
+region=$(slurp -dw 2 -b cdd6f475 -c 00000000)
+if [[ "$region" != "" ]]; then
+	if grim -cg "$region" "$filepath"; then
+		wl-copy --type image/png <"$filepath" &&
+		hyprctl notify 5 3000 "rgb(89b4fa)" "Screenshot taken!"
+	else
+		hyprctl notify 0 3000 "rgb(f38ba8)" "Screenshot failed!"
+	fi
+else
+	hyprctl notify 1 3000 "rgb(74c7ec)" "Screenshot canceled!"
+fi

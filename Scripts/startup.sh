@@ -4,7 +4,7 @@ crond &
 swww-daemon &
 waybar --config /home/aurora/Settings/Waybar/Config.jsonc --style /home/aurora/Settings/Waybar/Style.css &
 hypridle &
-mako --config /home/aurora/Misc/Mako &
+mako --config /home/aurora/Settings/Misc/Mako &
 systemctl --user start hyprpolkitagent
 hyprctl setcursor dracula-cursor 22
 gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
@@ -12,8 +12,9 @@ gsettings set org.gnome.desktop.interface gtk-theme "catppuccin-mocha-mauve-stan
 libinput-gestures-setup autostart start
 fcixt5 -d &
 nm-applet &
-/home/aurora/Settings/Scripts/battery-warning.sh &
-/home/aurora/Settings/Scripts/hyprland-event-watcher.sh &
+eww -c /home/aurora/Settings/Eww/ daemon &
+$SCRIPTS/battery-warning.sh &
+$SCRIPTS/hyprland-event-watcher.sh &
 
 # === Export some environment variables for ease of use in places that don't have access to them ===
 # To add something to the env file, add the line

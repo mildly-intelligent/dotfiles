@@ -1,5 +1,7 @@
 #!/bin/bash
 
+notify-send reloading
+
 pkill waybar
 waybar --config /home/aurora/Settings/Waybar/Config.jsonc --style /home/aurora/Settings/Waybar/Style.css &
 

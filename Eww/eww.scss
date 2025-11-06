@@ -1,10 +1,6 @@
 @import "./colors.scss";
 
 
-* {
-	all: unset
-}
-
 window {
 	background-color: $base;
 	border-radius: 30px;
@@ -40,7 +36,7 @@ $date: $red;
 
 // #endregion
 
-// #region Date
+// #region Time
 $time: $peach;
 @import "./sunset.scss";
 .bg {
@@ -68,7 +64,7 @@ $time: $peach;
 }
 // #endregion
 
-// #region power buttons
+// #region Power buttons
 .shutdown,
 .logout,
 .reboot,
@@ -89,3 +85,38 @@ $time: $peach;
 	color: $mauve;
 }
 // #endregion
+
+
+// Box containing the audio slider (actual slider is outside of the screen when not active)
+.volume-slider { background-color: transparent; }
+
+@keyframes popup {
+	from	{ margin-bottom: 0px; }
+	to		{ margin-bottom: 100px; }
+}
+.progress.active {
+	animation: popup 500ms ease-in-out 0s normal;
+	animation-fill-mode: backwards;
+}
+.progress.inactive { 
+	animation: popup 500ms ease-in-out 0s reverse;
+	animation-fill-mode: both;
+}
+
+.progress {
+	margin-bottom: 100px;
+
+	padding: 15px;
+	border-radius: 30px;
+	background-color: $surface0;
+}
+.progress > trough {
+	background-color: $surface1;
+	border-color: transparent;
+	border-radius: 5px;
+}
+.progress > trough > progress {
+	background-color: $mauve;
+	border-color: transparent;
+	border-radius: inherit;
+}

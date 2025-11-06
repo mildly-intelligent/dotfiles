@@ -1,3 +1,7 @@
+(defvar eww "eww -c /home/aurora/Settings/Eww/")
+
 (include "./Widgets/date.yuck")
 (include "./Widgets/time.yuck")
 (include "./Widgets/power.yuck")
+
+(include "./Widgets/volume-slider.yuck")

@@ -31,6 +31,6 @@
 						:y 10
 						:width 150
 						:height 150
-						:align "top-left")
+						:anchor "top-left")
 	:stacking "fg"
 	(date :lang "zh"))

@@ -10,7 +10,7 @@
 						:y 10
 						:width 70
 						:height 70
-						:align "top-left")
+						:anchor "top-left")
 	:stacking "fg"
 	(power_button :class "power"
 				  :symbol "shutdown.svg"

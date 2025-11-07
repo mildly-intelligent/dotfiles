@@ -2,7 +2,7 @@
 
 
 window {
-	background-color: $base;
+	background-color: $background;
 	border-radius: 30px;
 }
 
@@ -116,7 +116,7 @@ $time: $peach;
 	border-radius: 5px;
 }
 .progress > trough > progress {
-	background-color: $mauve;
+	background-color: $accent;
 	border-color: transparent;
 	border-radius: inherit;
 }

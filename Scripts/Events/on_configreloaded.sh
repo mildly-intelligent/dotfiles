@@ -2,6 +2,9 @@
 
 hyprctl -q notify 1 3000 "rgb(f9e2af)" "Reloading"
 
+$SCRIPTS/set-colors.sh
+hyprctl -q notify 5 3000 "rgb(a6e3a1)" "Colors reloaded"
+
 pkill waybar
 waybar --config /home/aurora/Settings/Waybar/Config.jsonc --style /home/aurora/Settings/Waybar/Style.css &
 sleep 1

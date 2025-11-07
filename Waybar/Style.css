@@ -15,13 +15,13 @@ window#waybar {
 }
 
 tooltip {
-  background: @base;
-  border: 1px solid @mauve;
+  background: @background;
+  border: 1px solid @accent;
   border-radius: 5px;
 }
 tooltip label {
   padding: 1px;
-  color: @text;
+  color: @foreground;
 }
 
 
@@ -29,7 +29,7 @@ tooltip label {
 .modules-left,
 .modules-center {
   border-radius: 15px;
-  background-color: @base;
+  background-color: @background;
 }
 
 

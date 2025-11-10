@@ -2,7 +2,7 @@
 
 crond &
 swww-daemon &
-waybar --config /home/aurora/Settings/Waybar/Config.jsonc --style /home/aurora/Settings/Waybar/Style.css &
+waybar --config /home/aurora/Settings/Waybar/config.jsonc --style /home/aurora/Settings/Waybar/style.css &
 hypridle &
 mako --config /home/aurora/Settings/Misc/Mako &
 systemctl --user start hyprpolkitagent

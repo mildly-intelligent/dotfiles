@@ -1,4 +1,4 @@
-@import "/home/aurora/Settings/Waybar/Colors.css";
+@import "/home/aurora/Settings/Waybar/colors.css";
 
 
 * {
@@ -33,6 +33,6 @@ tooltip label {
 }
 
 
-@import "/home/aurora/Settings/Waybar/Modules/Left/Style.css";
-@import "/home/aurora/Settings/Waybar/Modules/Center/Style.css";
-@import "/home/aurora/Settings/Waybar/Modules/Right/Style.css";
+@import "/home/aurora/Settings/Waybar/Modules/Left/style.css";
+@import "/home/aurora/Settings/Waybar/Modules/Center/style.css";
+@import "/home/aurora/Settings/Waybar/Modules/Right/style.css";

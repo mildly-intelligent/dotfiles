@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# source </home/aurora/Settings/Misc/env
+
 hyprctl -q notify 1 3000 "rgb(f9e2af)" "Reloading"
 hyprctl reload
 hyprctl -q notify 5 3000 "rgb(a6e3a1)" "Hyprland config reloaded"

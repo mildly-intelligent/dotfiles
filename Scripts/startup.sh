@@ -14,7 +14,6 @@ fcixt5 -d &
 nm-applet &
 eww -c /home/aurora/Settings/Eww/ daemon &
 $SCRIPTS/battery-warning.sh &
-$SCRIPTS/hyprland-event-watcher.sh &
 
 # === Export some environment variables for ease of use in places that don't have access to them ===
 # To add something to the env file, add the line

@@ -2,7 +2,7 @@
 
 filepath="$HOME/Pictures/Screenshots/$(date +%Y%m%d-%H%M%S).png"
 
-region=$(slurp -dw 2 -b cdd6f475 -c 00000000)
+region=$(wayfreeze --after-freeze-cmd "slurp -dw 2 -b cdd6f475 -c 00000000; pkill wayfreeze")
 if [[ "$region" != "" ]]; then
 	if grim -cg "$region" "$filepath"; then
 		wl-copy --type image/png <"$filepath" &&

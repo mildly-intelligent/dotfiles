@@ -1,7 +1,7 @@
 (defpoll volume :interval "50ms"
 	`amixer -D pulse sget Master | awk -F"[][]" '/Left:/ { sub(/%/,""); print $2 }'`)
 (defpoll changing_volume :interval "100ms"
-	`/home/aurora/Settings/Scripts/state.sh get CHANGING_VOLUME`)
+	`$SETTINGS_DIR/Scripts/state.sh get CHANGING_VOLUME`)
 
 (defwidget slider []
 	(progress :class "progress test ${changing_volume}"

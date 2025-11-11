@@ -1,6 +1,6 @@
 #!/bin/bash
 
-state="/home/aurora/Settings/Misc/state"
+state="$SETTINGS_DIR/Misc/state"
 
 if [[ "$1" == "set" ]]; then
 	if grep -qe "^$2\$" $state; then

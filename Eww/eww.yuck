@@ -1,4 +1,4 @@
-(defvar eww "eww -c /home/aurora/Settings/Eww/")
+(defvar eww "eww -c $SETTINGS_DIR/Eww/")
 
 (include "./Widgets/date.yuck")
 (include "./Widgets/time.yuck")

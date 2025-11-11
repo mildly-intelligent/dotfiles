@@ -1,6 +1,6 @@
 #!/bin/bash
 
-json="{\"\$schema\":\"/home/aurora/Settings/Misc/schema.event.json\","
+json="{\"\$schema\":\"$SETTINGS_DIR/Misc/schema.event.json\","
 
 d=""
 e="00:00"
@@ -133,7 +133,7 @@ for warning in $warnings; do
 		saturday)	cron+="${t:3:2} ${t:0:2} SAT";;
 		sunday)		cron+="${t:3:2} ${t:0:2} SUN";;
 	esac
-	cron+=" /home/aurora/Settings/Scripts/notify-event.sh $filename $i"
+	cron+=" $SETTINGS_DIR/Scripts/notify-event.sh $filename $i"
 	echo -e $cron >> /tmp/crontabCalenderEvents
 
 	i=$(( $i + 1 ))

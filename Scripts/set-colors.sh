@@ -1,7 +1,7 @@
 #!/bin/bash
 
-EwwColorConfig=/home/aurora/Settings/Eww/colors.scss
-WaybarColorConfig=/home/aurora/Settings/Waybar/colors.css
+EwwColorConfig=$SETTINGS_DIR/Eww/colors.scss
+WaybarColorConfig=$SETTINGS_DIR/Waybar/colors.css
 
 echo "/* === Color Pallette === */" | tee $WaybarColorConfig $EwwColorConfig 2>/dev/null
 echo "/* --- Colors --- */" | tee -a $WaybarColorConfig $EwwColorConfig 2>/dev/null

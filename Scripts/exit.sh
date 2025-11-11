@@ -1,4 +1,4 @@
 #!/bin/bash
 
-echo "" > /home/aurora/Settings/Misc/env
-echo "" > /home/aurora/Settings/Misc/state
+echo "" > $SETTINGS_DIR/Misc/env
+echo "" > $SETTINGS_DIR/Misc/state

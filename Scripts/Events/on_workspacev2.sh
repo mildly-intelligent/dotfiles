@@ -7,4 +7,4 @@
 # $1 - WORKSPACEID
 # $2 - WORKSPACENAME
 
-swww img /home/aurora/Settings/Wallpapers/$1 -t any
+swww img $SETTINGS_DIR/Wallpapers/$1 -t any

@@ -28,6 +28,7 @@ reload_waybar() {
 reload_eww() {
 	eww kill
 	eww -c $SETTINGS_DIR/Eww/ daemon
+	eww -c $SETTINGS_DIR/Eww/ open volume-slider 
 	hyprctl -q notify 5 3000 "rgb(a6e3a1)" "Eww reloaded"
 }
 

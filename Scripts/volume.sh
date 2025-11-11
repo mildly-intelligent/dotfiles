@@ -6,7 +6,7 @@ function volume {
 
 volumeOld=$(volume)
 
-eww='eww -c $SETTINGS_DIR/Eww/ '
+eww="eww -c $SETTINGS_DIR/Eww/ "
 $eww active-windows | grep -q volume-slider || $eww open volume-slider
 
 state=$($SCRIPTS/state.sh get CHANGING_VOLUME)

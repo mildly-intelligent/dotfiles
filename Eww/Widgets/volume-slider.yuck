@@ -1,13 +1,24 @@
-(defpoll volume :interval "50ms"
-	`amixer -D pulse sget Master | awk -F"[][]" '/Left:/ { sub(/%/,""); print $2 }'`)
-(defpoll changing_volume :interval "100ms"
+(defpoll changing_volume :interval "25ms"
 	`$SETTINGS_DIR/Scripts/state.sh get CHANGING_VOLUME`)
+(defpoll volume
+	:interval "50ms"
+	:run-while {changing_volume == "active"}
+	`pactl -f json get-sink-volume @DEFAULT_SINK@ | jq -rM '.volume."front-right".value_percent' | sed 's/%//'`)
+(defpoll volume-excess
+	:interval "50ms"
+	:run-while {changing_volume == "active"}
+	`python -c "print(min(max($(pactl -f json get-sink-volume @DEFAULT_SINK@ | jq -rM '.volume."front-right".value_percent' | sed 's/%//')-100, 0), 100))"`)
 
 (defwidget slider []
-	(progress :class "progress test ${changing_volume}"
-		:valign "end"
-		:height 50
-		:value {volume}))
+	(overlay :class "slider"
+		(progress :class "progress volume ${changing_volume}"
+			:valign "end"
+			:height 50
+			:value {volume})
+		(progress :class "progress excess ${changing_volume}"
+			:valign "end"
+			:height 50
+			:value {volume-excess})))
 
 (defwindow volume-slider
 	:monitor 0

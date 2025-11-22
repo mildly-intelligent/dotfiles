@@ -1,40 +1,43 @@
 #!/bin/bash
 
 function volume {
-	amixer -D pulse sget Master | awk -F"[][]" '/Left:/ { sub(/%/,""); print $2 }'
+	pactl -f json get-sink-volume @DEFAULT_SINK@ | jq -rM '.volume."front-right".value_percent'
 }
 
-volumeOld=$(volume)
-
 eww="eww -c $SETTINGS_DIR/Eww/ "
-$eww active-windows | grep -q volume-slider || $eww open volume-slider
 
 state=$($SCRIPTS/state.sh get CHANGING_VOLUME)
 
 if [[ "$state" == "active" ]]; then
-	amixer -qD pulse sset Master $1
+	pactl set-sink-volume @DEFAULT_SINK@ $1
 elif [[ "$state" == "inactive" ]]; then
-	amixer -qD pulse sset Master $1
-	
-	timeLeft=2000
+	pactl set-sink-volume @DEFAULT_SINK@ $1
+
+	timeLeft=1500
 
 	$SCRIPTS/state.sh set CHANGING_VOLUME
 	$eww reload
+	# $eww reload
+
+	volumeOld=$(volume)
 	while true; do
-		volumeNew=$(volume)
-		if (( timeLeft >= 0 )); then
-			:
-		else
-			$SCRIPTS/state.sh unset CHANGING_VOLUME
-			$eww reload
-			exit
-		fi
-		if [[ $volumeNew != $volumeOld ]]; then
-			timeLeft=2000
-		else
-			timeLeft=$((timeLeft - 20))
-		fi
-		volumeOld=$volumeNew
+		{
+			time {
+				volumeNew=$(volume)
+				if ((timeLeft < 0)); then
+					$SCRIPTS/state.sh unset CHANGING_VOLUME
+					$eww reload
+					exit
+				fi
+				if [[ $volumeNew != $volumeOld ]]; then
+					timeLeft=1500
+				else
+					timeLeft=$((timeLeft - 20))
+				fi
+				volumeOld=$volumeNew
+			}
+		} 2>&1
+		echo $timeLeft
 		sleep 0.020
 	done
 else

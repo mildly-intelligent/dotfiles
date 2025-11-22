@@ -19,5 +19,5 @@ while true; do
 			export BATTERY_STATUS="OKAY"
 		fi
 	fi
-	sleep 15
+	sleep 30
 done

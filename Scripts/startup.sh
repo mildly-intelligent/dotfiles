@@ -13,6 +13,7 @@ libinput-gestures-setup autostart start
 fcixt5 -d &
 nm-applet &
 eww -c $SETTINGS_DIR/Eww/ daemon &
+eww -c $SETTINGS_DIR/Eww/ open volume-slider &
 $SCRIPTS/battery-warning.sh &
 
 # === Export some environment variables for ease of use in places that don't have access to them ===

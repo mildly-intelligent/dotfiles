@@ -10,7 +10,7 @@ Flags:
 	-p	--power		Shuts down the computer.
 	-r	--reboot	Reboots the computer.
 	-s	--sleep		Suspends the computer's state to RAM.
-	-h	--hibernate	Suspends the computer's state to swap space. (Deprecated)
+	-h	--hibernate	Suspends the computer's state to swap space.
 	-l	--logout	Exits Hyprland.
 	-k	--lock		Opens the lock screen.
 EOF
@@ -25,11 +25,12 @@ EOF
 	;;
 '-s' | '--sleep')
 	echo Going to sleep!
-	systemctl suspend
+	systemctl hybrid-sleep
 	;;
 '-h' | '--hibernate')
 	echo Hibernating!
-	echo TODO
+	systemctl hibernate
+	hyprlock
 	;;
 '-l' | '--logout')
 	echo Logging out!

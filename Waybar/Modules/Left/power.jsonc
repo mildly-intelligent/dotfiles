@@ -9,7 +9,7 @@
             "custom/shutdown",
             "custom/restart",
             "custom/sleep",
-            // "custom/hibernate",
+            "custom/hibernate",
             "custom/logout",
             "custom/lock"
         ]

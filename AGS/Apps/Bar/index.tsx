@@ -7,17 +7,19 @@ import { monitorFile } from "ags/file"
 import { exec } from "ags/process"
 import GLib from "gi://GLib"
 
-const configDir = GLib.getenv('SETTINGS_DIR') + '/AGS/Widgets/Bar/'
+import { Volume } from "./Modules/volume"
+
+
+const configDir = GLib.getenv('SETTINGS_DIR') + '/AGS/Apps/Bar/'
 const stylesDir = configDir + '/Scss/'
 
 monitorFile(
-    // directory that contains the scss files
-    stylesDir,
+    configDir,
 
     // reload function
     function( ) {
         // main scss file
-        const scss = stylesDir + `/index.scss`;
+        const scss = configDir + `/index.scss`;
 
         // target css file
         const css = `/tmp/ags-style.css`;
@@ -41,18 +43,16 @@ app.start({
 				anchor={Astal.WindowAnchor.TOP | Astal.WindowAnchor.LEFT | Astal.WindowAnchor.RIGHT}
 			>
 				<centerbox>
-					<box class="module left" $type="start">
+					<box class="mod-group left" $type="start">
 
 					</box>
 
-					<box class="module center" $type="center">
+					<box class="mod-group center" $type="center">
 
 					</box>
 
-					<box class="module right" $type="end">
-						<label
-							label="hello"
-						/>
+					<box class="mod-group right" $type="end">
+						<Volume />
 					</box>
 				</centerbox>
 			</window>

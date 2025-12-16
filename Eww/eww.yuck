@@ -5,3 +5,5 @@
 (include "./Widgets/power.yuck")
 
 (include "./Widgets/volume-slider.yuck")
+
+(include "./Widgets/bar.yuck")

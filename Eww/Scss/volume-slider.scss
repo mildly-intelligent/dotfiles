@@ -1,0 +1,51 @@
+@import "../colors.scss";
+
+.volume-slider { background-color: transparent; }
+
+@keyframes popup {
+	from	{ margin-bottom: 0px; }
+	to		{ margin-bottom: 100px; }
+}
+.progress.active {
+	animation: popup 500ms ease-in-out 0s normal;
+	animation-fill-mode: backwards;
+}
+.progress.inactive { 
+	animation: popup 500ms ease-in-out 0s reverse;
+	animation-fill-mode: forwards;
+}
+
+.progress {
+	margin-bottom: 100px;
+
+	padding: 15px;
+	border-radius: 30px;
+}
+.progress > trough {
+	border-color: transparent;
+	border-radius: 5px;
+}
+.progress > trough > progress {
+	border-color: transparent;
+	border-radius: inherit;
+}
+
+.progress.volume {
+	background-color: $surface0;
+}
+.progress.volume > trough {
+	background-color: $surface1;
+}
+.progress.volume > trough > progress {
+	background-color: $accent;
+}
+
+.progress.excess {
+	background-color: transparent;
+}
+.progress.excess > trough {
+	background-color: transparent;
+}
+.progress.excess > trough > progress {
+	background-color: darken($accent, 10%);
+}

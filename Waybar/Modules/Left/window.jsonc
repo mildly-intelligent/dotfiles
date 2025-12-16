@@ -10,8 +10,8 @@
             "(.*) - Blender (\\d).(\\d).(\\d)": "$1",
             "(.*) - Godot Engine": "$1",
             "(.*) — LibreOffice Writer": "$1",
-            "(.*) - Mozilla Thunderbird": "$1",
+            "(.*) - Mozilla Thunderbird": "$1"
         },
-        "icon": true,
+        "icon": true
     }
 }

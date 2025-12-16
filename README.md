@@ -17,6 +17,7 @@ bash ./install.sh
 * <kbd>Meta</kbd>+<kbd>⇧ Shift</kbd>+<kbd>C</kbd> - Reload Hyprland
 * <kbd>PrtSc</kbd> - Take screenshot
 * <kbd>CapsLock</kbd><sup>†</sup> - Switch keyboard via fcitx5
+* <kbd>Meta</kbd>+<kbd>⇧ Shift</kbd>+<kbd>P</kbd> - Metal pipe
 
 #### Window Control
 * <kbd>Meta</kbd>+<kbd>⇧ Shift</kbd>+<kbd>Q</kbd> - Close active window
@@ -34,7 +35,7 @@ bash ./install.sh
 * <kbd>Meta</kbd>+<kbd>D</kbd> - Open Discord
 * <kbd>Meta</kbd>+<kbd>F</kbd> - Open files (Nemo)
 * <kbd>Meta</kbd>+<kbd>S</kbd> - Open Spotify
-* <kbd>Meta</kbd>+<kbd>T</kbd> - Open the terminal (Kitty)
+* <kbd>Meta</kbd>+<kbd>T</kbd> - Open terminal (Kitty)
 
 #### Workspace Switching
 * <kbd>Meta</kbd>+<kbd>F1-12</kbd> - Switch to workspace #
@@ -116,6 +117,9 @@ Shows the date and time.
 #### Keyboard
 Shows the keyboard being used by Fcixt5, for me either ENG or 中文.
 
+#### School
+Shows the current period in school, upon hover it shows what the period is and how much time is left.
+
 
 ## Wofi
 
@@ -131,16 +135,66 @@ This is a script that will run on loop and send a notification when the battery 
 
 This notification is located in the top right of the screen along side other non-battery related notifications.
 
-![Notification saying "BATTERY LOW"](./Examples-low-notification.png)
+![Notification saying "BATTERY LOW"](./Examples/battery-low-notification.png)
 
 ### Very Low
 
 This notification is located in the center of the screen.
 
-![Notification saying "BATTERY VERY LOW"](./Examples-very-low-notification.png)
+![Notification saying "BATTERY VERY LOW"](./Examples/battery-very-low-notification.png)
 
 ### Critical
 
 This notification is located in the center of the screen.
 
-![Notification saying "BATTERY CRITICAL"](./Examples-critical-notification.png)
+![Notification saying "BATTERY CRITICAL"](./Examples/battery-critical-notification.png)
+
+## Eww
+
+### Volume Slider
+
+Will slide up from the bottom of the screen wen changing volume.
+
+![Volume slider appearing and changing volume](./Examples/eww_volume-slider.gif)
+
+# Roadmap
+
+## TODO
+
+### Eww
+* [ ] Finish power widgets.
+* [ ] Notifications pane.
+* [ ] Music widget.
+* [ ] Battery widget.
+* [ ] Current class.
+* [ ] Arrange widgets.
+* [ ] Display widgets on blank workspace.
+
+## Done
+
+### Eww
+* [x] Date widget.
+* [x] Time widget.
+
+### Hyprland
+* [x] Hyprland native notifications instead of mako for system notifications
+
+## IDEAS
+
+* Gesture to reopen recently closed windows.
+* Rework waybar into Eww.
+
+
+# Useful links
+
+## Documentations:
+
+* [Eww documentation](https://elkowar.github.io/eww/eww.html)
+
+## Inspo
+
+* [Eww config](https://github.com/nautilor/nord-eww)
+
+## Things to look into
+
+* [hyprquickshot](https://github.com/JamDon2/hyprquickshot/)

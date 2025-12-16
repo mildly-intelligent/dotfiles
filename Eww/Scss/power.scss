@@ -1,0 +1,21 @@
+@import "../colors.scss";
+
+.shutdown,
+.logout,
+.reboot,
+.suspend {
+	border-radius: 20px;
+	color: $blue;
+}
+.shutdown {
+	color: $maroon;
+}
+.logout {
+	color: $green;
+}
+.reboot {
+	color: $peach;
+}
+.suspend {
+	color: $mauve;
+}

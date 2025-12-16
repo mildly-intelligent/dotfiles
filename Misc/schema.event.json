@@ -1,0 +1,79 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"description": "Schema used to create events, including things like time, repetitions, and place.",
+	"properties": {
+		"name": {
+			"type": "string",
+			"description": "The name of the event."
+		},
+		"description": {
+			"type": "string",
+			"description": "More information on the what the event is."
+		},
+		"starttime": {
+			"type": "string",
+			"description": "What time of day the event starts.",
+			"pattern": "^[0-2]?\\d:[0-5]\\d\\s*([ap]m)?$"
+		},
+		"startdate": {
+			"type": "string",
+			"description": "What date does the beginning of the event fall on. (MM/DD)",
+			"pattern": "^[0-3]\\d\\s\\/\\s[01]?\\d$"
+		},
+		"endtime": {
+			"type": "string",
+			"description": "What time of day the event ends.",
+			"pattern": "^[0-2]?\\d:[0-5]\\d\\s*([ap]m)?$"
+		},
+		"enddate": {
+			"type": "string",
+			"description": "What date does the end of the event fall on. (MM/DD)",
+			"pattern": "^[0-3]\\d\\s\\/\\s[01]?\\d$"
+		},
+		"repeat": {
+			"description": "How often (if at all) to repeat the event.",
+			"type": "string",
+			"enum": [
+				"never",
+				"daily",
+				"weekly",
+				"monthly",
+				"yearly",
+				"weekdays",
+				"weekends",
+				"mondays",
+				"tuesdays",
+				"wednesdays",
+				"thursdays",
+				"fridays",
+				"saturdays",
+				"sundays"
+			]
+		},
+		"location": {
+			"type": "string",
+			"description": "Where does this event take place."
+		},
+		"warning": {
+			"description": "How many minutes before the event to warn the user (either a list or a number).",
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"type": "integer",
+				"minimum": 0
+			},
+			"default": [5,10,30]
+		},
+		"notify": {
+			"type": "boolean",
+			"description": "Should it notify the user when the event starts.",
+			"default": true
+		}
+	},
+	
+	"required": [ "name" ],
+	"anyOf": [
+		{ "required": [ "starttime" ] },
+		{ "required": [ "startdate" ] }
+	]
+}

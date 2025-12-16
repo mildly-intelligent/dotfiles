@@ -10,12 +10,13 @@
         "/home/mildly-intelligent/Settings/Waybar/Modules/Center/tray.jsonc",
 		"/home/mildly-intelligent/Settings/Waybar/Modules/Center/workspaces.jsonc",
 
-		"/home/mildly-intelligent/Settings/Waybar/Modules/Right/battery.jsonc",
-		"/home/mildly-intelligent/Settings/Waybar/Modules/Right/cava.jsonc",
-		"/home/mildly-intelligent/Settings/Waybar/Modules/Right/clock.jsonc",
-		"/home/mildly-intelligent/Settings/Waybar/Modules/Right/network.jsonc",
-		"/home/mildly-intelligent/Settings/Waybar/Modules/Right/pulseaudio.jsonc",
-		"/home/mildly-intelligent/Settings/Waybar/Modules/Right/language.jsonc",
+		"/home/aurora/Settings/Waybar/Modules/Right/battery.jsonc",
+		"/home/aurora/Settings/Waybar/Modules/Right/cava.jsonc",
+		"/home/aurora/Settings/Waybar/Modules/Right/clock.jsonc",
+		"/home/aurora/Settings/Waybar/Modules/Right/network.jsonc",
+		"/home/aurora/Settings/Waybar/Modules/Right/pulseaudio.jsonc",
+		"/home/aurora/Settings/Waybar/Modules/Right/language.jsonc",
+        "/home/aurora/Settings/Waybar/Modules/Right/school.jsonc",
     ],
 
     "modules-left": [
@@ -29,11 +30,12 @@
     ],
 
     "modules-right": [
-        "cava",
+        // "cava",
         "pulseaudio",
         "network",
         "battery",
         "clock#date", "clock#time",
-		"custom/language"
+		"custom/language",
+        "custom/school",
     ],
 }

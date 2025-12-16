@@ -1,0 +1,28 @@
+@import "../colors.scss";
+
+$date: $red;
+.date {
+	font-family: "Source Han Serif CN", serif;
+	font-weight: bolder;
+	color: $date
+}
+
+.date > .dow {
+	color: desaturate($color: $date, $amount: 50);
+	font-style: italic;
+	font-weight: normal;
+	font-size: medium;
+	margin: -10 0 -20 0px;
+}
+.date > .day {
+	font-size: xx-large;
+}
+.date > .month {
+	font-size: xx-large;
+}
+.date > .year {
+	font-weight: normal;
+	font-size: small;
+	margin: -20 0 -10 0px;
+	// tab-size: 10px;
+}

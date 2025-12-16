@@ -1,0 +1,38 @@
+@import "/home/aurora/Settings/Waybar/colors.css";
+
+
+* {
+  font-family: "Noto Sans Nerd Font", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  border-radius: 13px;
+}
+
+window#waybar {
+  background-color: transparent;
+  border-radius: 13px;
+  transition-property: background-color;
+  transition-duration: .5s;
+}
+
+tooltip {
+  background: @background;
+  border: 1px solid @accent;
+  border-radius: 5px;
+}
+tooltip label {
+  padding: 1px;
+  color: @foreground;
+}
+
+
+.modules-right,
+.modules-left,
+.modules-center {
+  border-radius: 15px;
+  background-color: @background;
+}
+
+
+@import "/home/aurora/Settings/Waybar/Modules/Left/style.css";
+@import "/home/aurora/Settings/Waybar/Modules/Center/style.css";
+@import "/home/aurora/Settings/Waybar/Modules/Right/style.css";

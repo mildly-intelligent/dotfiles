@@ -4,8 +4,8 @@ gesture	swipe	right	4	playerctl previous
 # next song:
 gesture	swipe	left	4	playerctl next
 # increase volume by 10%:
-gesture	swipe	up		4	amixer -qD pulse sset Master 10%+
+gesture	swipe	up		4	/home/aurora/Settings/Scripts/volume.sh +5%
 # decrease volume by 10%:
-gesture	swipe	down	4	amixer -qD pulse sset Master 10%-
+gesture	swipe	down	4	/home/aurora/Settings/Scripts/volume.sh -5%
 # start or stop the song:
 gesture	hold	on		4	playerctl play-pause

@@ -1,0 +1,29 @@
+(defpoll hour :interval "1m"
+	`date +%I | sed 'y/0123456789/🯰🯱🯲🯳🯴🯵🯶🯷🯸🯹/'`)
+(defpoll minute :interval "1s"
+	`date +%M | sed 'y/0123456789/🯰🯱🯲🯳🯴🯵🯶🯷🯸🯹/'`)
+(defpoll second :interval "50ms"
+	`date +%S.%N`)
+
+; (defpoll temp :interval "10ms"
+; 	`date +%S | sed 'y/0123456789/🯰🯱🯲🯳🯴🯵🯶🯷🯸🯹/'`)
+
+(defwidget time []
+	(overlay
+		(box :class "bg hour-${formattime(EWW_TIME, '%H')}")
+		(box :class "main" :orientation "v"
+			(label :class "hour" :text hour)
+			(label :class "minute" :text minute))
+		(circular-progress :class "second"
+						   :value {second * 5/3}
+						   :thickness 5)))
+
+(defwindow time
+	:monitor 0
+	:geometry (geometry :x 10
+						:y 10
+						:width 150
+						:height 150
+						:anchor "top-left")
+	:stacking "fg"
+	(time ))

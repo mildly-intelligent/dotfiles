@@ -1,4 +1,4 @@
-@import "../../Colors.css";
+@import "../../colors.css";
 
 
 .modules-right {
@@ -11,8 +11,9 @@
 #pulseaudio,
 #network,
 #clock,
-#custom-language {
-  padding: 0 10px;
+#custom-language,
+#custom-school {
+  padding: 0 5px;
 }
 
 #cava {
@@ -39,6 +40,10 @@
 
 #custom-language {
   color: @mauve;
+}
+
+#custom-school {
+  color: @pink;
 }
 
 

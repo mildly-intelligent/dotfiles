@@ -1,9 +1,9 @@
 {
 	"custom/language": {
-		"exec": "/home/mildly-intelligent/Settings/Scripts/language.sh",
+		"exec": "/home/aurora/Settings/Scripts/waybar-language.sh",
 		"format": "{text}",
 		"interval": 1,
 		"tooltip-format": "",
-		"on-click": "/home/mildly-intelligent/Settings/Scripts/switch-language.sh",
+		"on-click": "/home/aurora/Settings/Scripts/switch-language.sh"
 	}
 }

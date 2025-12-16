@@ -1,0 +1,12 @@
+@import "./colors.scss";
+
+
+window {
+	background-color: $background;
+	border-radius: 30px;
+}
+
+@import "./Scss/date.scss";
+@import "./Scss/time.scss";
+@import "./Scss/power.scss";
+@import "./Scss/volume-slider.scss";

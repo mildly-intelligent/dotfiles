@@ -25,15 +25,15 @@ EOF
 	;;
 '-s' | '--sleep')
 	echo Going to sleep!
-	systemctl suspend
+	systemctl hybrid-sleep
 	;;
 '-h' | '--hibernate')
 	echo Hibernating!
-	echo TODO
+	systemctl hibernate
+	hyprlock
 	;;
 '-l' | '--logout')
 	echo Logging out!
-	~/Settings/Hyprland/Scripts/exit.sh
 	hyprctl dispatch exit
 	;;
 '-k' | '--lock')
